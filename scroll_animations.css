@@ -1,0 +1,27 @@
+.fade_in{
+    transition: 0.5s;
+    opacity: 0;
+}
+.fade_in.show{
+    opacity: 1;
+}
+
+.slide_up{
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.slide_up.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide_right{
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.slide_right.show{
+    opacity: 1;
+    transform: translateX(0px);
+}

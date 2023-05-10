@@ -1,0 +1,446 @@
+/*--- nav start ---*/
+.unscrolled_nav img{
+    opacity: 0;
+}
+.scrolled_nav img{
+    opacity: 1;
+}
+/*--- nav end ---*/
+
+/*--- home banner start ---*/
+#home_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 20vh 0;
+    min-height: 60vh;
+}
+#home_banner h1{
+    margin: 15px 0 0;
+}
+#home_banner img{
+    width: 500px;
+}
+/*--- home banner end ---*/
+
+/*--- who are we start ---*/
+#who_are_we{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30vh 5vw 15vh;
+}
+#who_are_we img{
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    width: 250px;
+    margin-bottom: 30px;
+}
+#who_are_we p{
+    font-size: 25px;
+    margin: 0 0 30px;
+    text-align: justify;
+    width: 70%;
+}
+#who_are_we a{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+#who_are_we a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*--- who are we end ---*/
+
+/*--- services start ---*/
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15vh 5vw;
+}
+.service{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 30px 0;
+}
+.service img{
+    width: 300px;
+    margin-right: 30px;
+}
+.service p{
+    font-size: 25px;
+    text-align: justify;
+}
+.service a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+.service a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*--- services end ---*/
+
+/*--- flexing start ---*/
+#flexing{
+    padding: 15vh 5vw;
+}
+#numbers, #brands{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#numbers_holder, #brands_holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+.number p{
+    font-size: 25px;
+    margin: 0;
+}
+.number:nth-child(2){
+    transition-delay: 0.25s;
+}
+.number:nth-child(3){
+    transition-delay: 0.5s;
+}
+.number:nth-child(4){
+    transition-delay: 0.75s;
+}
+
+#brands{
+    margin-top: 30px;
+}
+#mobile_brands{
+    display: none;
+}
+.brand img{
+    width: 225px;
+    filter: grayscale(100%);
+    transition: 0.25s;
+}
+.brand img:hover{
+    filter: grayscale(0%);
+    transform: scale(105%);
+}
+.brand:nth-child(2){
+    transition-delay: 0.25s;
+}
+.brand:nth-child(3){
+    transition-delay: 0.5s;
+}
+.brand:nth-child(4){
+    transition-delay: 0.75s;
+}
+/*--- flexing end ---*/
+
+/*--- customer appreciation start ---*/
+#customer_appreciation{
+    padding: 15vh 5vw 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#customer_appreciation_txt{
+    margin: 0 0 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#comments_slider{
+    display: flex;
+    align-items: center;
+}
+#comments_slider i{
+    font-size: 35px;
+}
+#comments{
+    display: flex;
+    width: 3850px;
+}
+#comments_holder{
+    overflow: hidden;
+}
+.comment{
+    aspect-ratio: 3/2;
+    width: 500px;
+    padding: 15px;
+    margin: 0 10px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+.comment_header{
+    display: flex;
+    align-content: center;
+    height: 20%;
+}
+.comment_header img{
+    aspect-ratio: 1/1;
+    height: 100%;
+    border-radius: 1000px;
+    background-color: black;
+    margin-right: 15px;
+}
+.comment_header p{
+    font-size: 25px;
+    margin: 0;
+}
+.comment_content{
+    font-size: 25px;
+    text-align: justify;
+}
+/*--- customer appreciation end ---*/
+
+/*big tablet styling*/
+@media(max-width:1079px){    
+    /*--- home banner start ---*/
+    #home_banner{
+        min-height: 60vh;
+    }
+    /*--- home banner end ---*/
+    
+    /*--- who are we start ---*/
+    #who_are_we{
+        min-height: 40vh;
+    }
+    /*--- who are we end ---*/
+    
+    /*--- services start ---*/
+    #services{
+        min-height: 40vh;
+    }
+    
+    .service{
+        width: 800px;
+    }
+    /*--- services end ---*/
+    
+    /*--- flexing start ---*/
+    .number{
+        height: 175px;
+        width: 175px;
+        padding: 15px;
+    }
+    .brand img{
+        width: 190px;
+    }
+    /*--- flexing end ---*/
+    
+    /*--- customer appreciation start ---*/
+    #customer_appreciation{
+        min-height: 40vh;
+    }
+    /*--- customer appreciation end ---*/
+}
+
+/*regular tablet styling*/
+@media(max-width:850px){
+    /*--- home banner start ---*/
+    #home_banner{
+        min-height: 60vh;
+    }
+    /*--- home banner end ---*/
+    
+    /*--- who are we start ---*/
+    #who_are_we{
+        padding: 20vh 5vw 10vh;
+    }
+    /*--- who are we end ---*/
+    
+    /*--- services start ---*/
+    #services{
+        padding: 10vh 5vw;
+    }  
+    #services_holder{
+        width: fit-content;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service{
+        width: 90vw;
+        margin: 30px 0;
+    }
+    /*--- services end ---*/
+    
+    /*--- flexing start ---*/
+    #flexing{
+        padding: 10vh 5vw;
+    }
+    .number{
+        height: 135px;
+        width: 135px;
+    }
+    .number p{
+        font-size: 20px;
+    }
+    .brand img{
+        width: 150px;
+        filter: grayscale(100%);
+        transition: 0.25s;
+    }
+    .brand img:hover{
+        filter: grayscale(0%);
+        transform: scale(105%);
+    }
+    /*--- flexing end ---*/
+    
+    /*--- customer appreciation start ---*/
+    #customer_appreciation{
+        min-height: 10vh 5vw 20vh;
+    }
+    /*--- customer appreciation end ---*/
+}
+
+/*phone styling*/
+@media(max-width:420px){    
+    /*--- home banner start ---*/
+    #home_banner{
+        min-height: 60vh;
+    }
+    #home_banner h1{
+        width: 95%;
+        text-align: center;
+    }
+    #home_banner img{
+        width: 95%;
+    }
+    /*--- home banner end ---*/
+    
+    /*--- who are we start ---*/
+    #who_are_we img{
+        width: 80%;
+    }
+    #who_are_we p{
+        width: auto;
+    }
+    /*--- who are we end ---*/
+    
+    /*--- flexing start ---*/
+    #flexing h2{
+        text-align: center;
+    }
+    #numbers_holder, #brands_holder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .number{
+        margin: 20px 0;
+        height: 250px;
+        width: 250px;
+    }
+    .number p{
+        font-size: 25px;
+    }
+    .brand img{
+        width: 280px;
+        margin: 20px 0;
+    }
+    #brands{
+        display: none;
+    }
+    #mobile_brands{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /*--- flexing end ---*/
+    
+    /*--- services start ---*/    
+    #services_holder{
+        width: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .service h2{
+        text-align: center;
+    }
+    .service img{
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .service_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*--- services end ---*/
+    
+    /*--- customer appreciation start ---*/
+    #customer_appreciation h1{
+        text-align: center;
+    }
+    
+    .comment{
+        aspect-ratio: 2/3;
+        width: 290px;
+        padding: 15px;
+        margin: 0 5px;
+    }
+    .comment_header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .comment_header img{
+        height: 80px;
+        width: 80px;
+    }
+    .comment_header p{
+        font-size: 22.5px;
+    }
+    .comment_content{
+        font-size: 22.5px;
+    }
+    /*--- customer appreciation end ---*/  
+}

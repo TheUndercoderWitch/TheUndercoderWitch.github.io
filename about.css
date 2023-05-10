@@ -1,0 +1,176 @@
+/*--- Who are we start ---*/
+#who_are_we{
+    padding: 30vh 5vw 15vh;
+    display: flex;
+    align-items: center;
+}
+#who_are_we img{
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    width: 400px;
+    margin-right: 50px;
+}
+#who_are_we p{
+    font-size: 25px;
+    margin: 0;
+    text-align: justify;
+}
+/*--- Who are we end ---*/
+
+/*--- our mission start ----*/
+#our_mission{
+    padding: 15vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mission_illustration{
+    width: 400px;
+    margin-right: 50px;
+}
+#our_mission p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 0;
+}
+/*--- our mission end ----*/
+
+/*--- staff start ----*/
+#staff{
+    padding: 15vh 5vw 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+#staff_members{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    justify-content: center;
+    grid-gap: 25px;
+}
+.staff_member{
+    aspect-ratio: 2/3;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.staff_member:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.staff_member img{
+    width: 60%;
+    border-radius: 1000px;
+    margin-bottom: 20px;
+}
+.staff_member p{
+    font-size: 25px;
+    margin: 0;
+}
+.staff_member:nth-child(2){
+    transition-delay: 0.25s;
+}
+.staff_member:nth-child(3){
+    transition-delay: 0.5s;
+}
+.staff_member:nth-child(4){
+    transition-delay: 0.75s;
+}
+/*--- staff end ----*/
+
+/*big tablet styling*/
+@media(max-width:1079px){
+    /*--- Who are we start ---*/
+    #who_are_we{
+        padding: 20vh 5vw 10vh;
+    }
+    /*--- Who are we end ---*/
+    
+    /*--- our mission start ----*/
+    #our_mission{
+        padding: 10vh 5vw;
+    }
+    /*--- our mission end ----*/
+    
+    /*--- staff start ----*/
+    #staff{
+        padding: 10vh 5vw 20vh;
+    }
+    .staff_member:nth-child(2){
+        transition-delay: 0s;
+    }
+    .staff_member:nth-child(3){
+        transition-delay: 0s;
+    }
+    .staff_member:nth-child(4){
+        transition-delay: 0s;
+    }
+    /*--- staff end ----*/    
+}
+
+/*regular tablet styling*/
+@media(max-width:850px){
+    /*--- Who are we start ---*/
+    #who_are_we{
+        flex-direction: column;
+        justify-content: center;
+        min-height: 65vh;
+    }
+    #who_are_we img{
+        width: 350px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #who_are_we h1{
+        text-align: center;
+    }
+    /*--- Who are we end ---*/
+    
+    /*--- our mission start ----*/
+    #our_mission{
+        flex-direction: column;
+        min-height: 65vh;
+    }
+    #mission_illustration{
+        width: 350px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #our_mission h1{
+        text-align: center;
+    }
+    /*--- our mission end ----*/
+    
+    /*--- staff start ----*/
+    #staff{
+        min-height: 60vh;
+    }
+    /*--- staff end ----*/
+}
+
+/*phone styling*/
+@media(max-width:420px){
+    /*--- Who are we start ---*/
+    #who_are_we img{
+        width: 80%;
+    }
+    /*--- Who are we end ---*/
+    
+    /*--- our mission start ----*/
+    #mission_illustration{
+        width: 80%;
+    }
+    /*--- our mission end ----*/  
+}

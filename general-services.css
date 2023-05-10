@@ -1,0 +1,240 @@
+/*--- header start ---*/
+#header{
+    padding: 10vh 10vw;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service_illustration{
+    width: 400px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+    margin-right: 50px;
+}
+#header_text{
+    transition-delay: 0.25s;
+}
+#header p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 0;
+}
+/*--- header end ---*/
+
+/*--- strategy start ---*/
+#strategy{
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#strategy_description{
+    font-size: 25px;
+    text-align: justify;
+    margin: 0 0 25px;
+}
+.strategy_point{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+    width: 800px;
+    margin: 10px 0 20px;
+}
+.strategy_number{
+    font-size: 100px;
+    margin: 0 15px 0 0;
+}
+.strategy_point_text p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 0;
+}
+/*--- strategy end ---*/
+
+/*--- work start ---*/
+#work{
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+#work_holder{
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 325px);
+    grid-gap: 5px;
+}
+.work{
+    text-decoration: none;
+    color: white;
+}
+.work_content{
+    aspect-ratio: 1/1;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.work_illustration{
+    aspect-ratio: inherit;
+    width: inherit;
+    background-color: rgb(200, 200, 200);
+}
+.work_text{
+    aspect-ratio: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    filter: grayscale(100%);
+    transition: 0.25s;
+}
+.work_text:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    filter: grayscale(0%);
+}
+.work_text img{
+    width: 60%;
+}
+.work_text p{
+    font-size: 25px;
+    text-align: center;
+    width: 90%;
+    margin: 15px 0 0;
+}
+
+.work:nth-child(2){
+    transition-delay: 0.25s;
+}
+.work:nth-child(3){
+    transition-delay: 0.5s;
+}
+.work:nth-child(4){
+    transition-delay: 0.75s;
+}
+.work:nth-child(5){
+    transition-delay: 1s;
+}
+.work:nth-child(6){
+    transition-delay: 1.25s;
+}
+/*--- work end ---*/
+
+/*--- contact start ---*/
+#contact{
+    padding: 10vh 10vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact a{
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: 0.25s;
+}
+#contact a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*--- contact end ---*/
+
+/*big tablet styling*/
+@media(max-width:1079px){
+    /*--- header start ---*/
+    #header{
+        min-height: 50vh;
+    }
+    /*--- header end ---*/
+    
+    /*--- strategy start ---*/
+    #strategy{
+        min-height: 60vh;
+    }
+    /*--- strategy end ---*/
+    
+    /*--- contact start ---*/
+    #contact{
+        min-height: 20vh;
+    }
+    /*--- contact end ---*/
+}
+
+/*regular tablet styling*/
+@media(max-width:850px){
+    /*--- header start ---*/
+    #header{
+        flex-direction: column;
+        min-height: 60vh;
+    }
+    
+    #service_illustration{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    /*--- header end ---*/
+    
+    /*--- strategy start ---*/
+    #strategy{
+        min-height: 60vh;
+    }
+    .strategy_point{
+        width: 80vw;
+    }
+    /*--- strategy end ---*/
+    
+    /*--- contact start ---*/
+    #contact{
+        min-height: 25vh;
+    }
+    /*--- contact end ---*/
+}
+
+/*phone styling*/
+@media(max-width:420px){
+    /*--- header start ---*/
+    #service_illustration{
+        width: 80%;
+    }
+    h1{
+        text-align: center;
+    }
+    /*--- header end ---*/
+    
+    /*--- strategy start ---*/
+    #strategy{
+        min-height: 60vh;
+    }
+    .strategy_point{
+        width: 80vw;
+        flex-direction: column;
+    }
+    .strategy_number{
+        font-size: 75px;
+    }
+    .strategy_point h5{
+        text-align: center;
+    }
+    /*--- strategy end ---*/
+    
+    /*--- contact start ---*/
+    #contact h2{
+        text-align: center;
+    }
+    /*--- contact end ---*/
+}
