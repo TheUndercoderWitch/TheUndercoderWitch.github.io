@@ -123,6 +123,31 @@ footer{
 
 /*phone styling*/
 @media(max-width:420px){
+    /*--- general start ---*/
+    h1{
+        font-size: 50px;
+        margin: 0 0 25px;
+    }
+    h2{
+        font-size: 45px;
+        margin: 0 0 20px;
+    }
+    h3{
+        font-size: 35px;
+        margin: 0 0 15px;
+    }
+    h5{
+        font-size: 30px;
+        margin: 0 0 5px;
+    }
+    
+    section{
+        padding: 15vh 10vw;
+        min-height: 50vh;
+    }
+    /*--- general end ---*/
+
+    
     /*--- footer start ---*/
     footer{
         padding: 3vh;

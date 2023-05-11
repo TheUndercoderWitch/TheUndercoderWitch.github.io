@@ -1,7 +1,5 @@
 /*--- header start ---*/
 #header{
-    padding: 10vh 10vw;
-    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +22,6 @@
 
 /*--- strategy start ---*/
 #strategy{
-    padding: 10vh 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +54,6 @@
 
 /*--- work start ---*/
 #work{
-    padding: 10vh 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,8 +127,6 @@
 
 /*--- contact start ---*/
 #contact{
-    padding: 10vh 10vw;
-    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,33 +150,12 @@
 
 /*big tablet styling*/
 @media(max-width:1079px){
-    /*--- header start ---*/
-    #header{
-        min-height: 50vh;
-    }
-    /*--- header end ---*/
     
-    /*--- strategy start ---*/
-    #strategy{
-        min-height: 60vh;
-    }
-    /*--- strategy end ---*/
-    
-    /*--- contact start ---*/
-    #contact{
-        min-height: 20vh;
-    }
-    /*--- contact end ---*/
 }
 
 /*regular tablet styling*/
-@media(max-width:850px){
+@media(max-width:950px){
     /*--- header start ---*/
-    #header{
-        flex-direction: column;
-        min-height: 60vh;
-    }
-    
     #service_illustration{
         margin-right: 0;
         margin-bottom: 50px;
@@ -190,19 +163,10 @@
     /*--- header end ---*/
     
     /*--- strategy start ---*/
-    #strategy{
-        min-height: 60vh;
-    }
     .strategy_point{
         width: 80vw;
     }
     /*--- strategy end ---*/
-    
-    /*--- contact start ---*/
-    #contact{
-        min-height: 25vh;
-    }
-    /*--- contact end ---*/
 }
 
 /*phone styling*/
@@ -217,9 +181,6 @@
     /*--- header end ---*/
     
     /*--- strategy start ---*/
-    #strategy{
-        min-height: 60vh;
-    }
     .strategy_point{
         width: 80vw;
         flex-direction: column;
