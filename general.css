@@ -40,6 +40,12 @@ header{
     padding: 10px 5vw;
     height: 7vh;
 }
+header a{
+    font-size: 25px;
+    margin: 0 15px 0 0;
+    text-decoration: none;
+    color: black;
+}
 header select{
     background-color: black;
     color: white;
