@@ -39,7 +39,6 @@
     width: 80vw;
 }
 #services h1{
-    text-align: center;
 }
 #services img{
     width: 400px;
@@ -68,6 +67,10 @@
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: black;
+}
+
+.service:nth-child(2){
+    transition-delay: 0.25s;
 }
 /*--- services end ---*/
 
@@ -386,7 +389,7 @@
 }
 
 /*regular tablet styling*/
-@media(max-width:850px){
+@media(max-width:950px){
     /*--- Who are we start ---*/
     #who_are_we{
         flex-direction: column;
@@ -422,6 +425,9 @@
     #services{
         flex-direction: column;
         width: auto;
+    }
+    #services h1{
+        text-align: center;
     }
     #services img{
         width: 350px;
