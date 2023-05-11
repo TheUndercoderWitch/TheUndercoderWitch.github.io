@@ -12,29 +12,29 @@ let phoneMode = false;
 /*--- comments slider code start ---*/
 function animateCommentsSlider(){
     if(pcMode || tabletMode){
-        commentsDiv.style.marginLeft = -550 * currentCommentIndex + "px";
+        commentsDiv.style.marginLeft = -500 * currentCommentIndex + "px";
     }
     else if(phoneMode){
-        commentsDiv.style.marginLeft = -330 * currentCommentIndex + "px";
+        commentsDiv.style.marginLeft = -320 * currentCommentIndex + "px";
     }
 }
 function startSettings(){
     /*set comments*/
     if(screen.width > 450 && screen.width <= 1080){
-        commentsHolder.style.width = "550px";
+        commentsHolder.style.width = "500px";
         pcMode = false;
         tabletMode = true;
         phoneMode = false;
     }
     else if(screen.width <= 450 && screen.width <= 1080){
-        commentsHolder.style.width = "330px";
+        commentsHolder.style.width = "320px";
         pcMode = false;
         tabletMode = false;
         phoneMode = true;
         console.log("Phone mode ON");
     }
     else{
-        commentsHolder.style.width = "1100px";
+        commentsHolder.style.width = "1000px";
         pcMode = true;
         tabletMode = false;
         phoneMode = false;
