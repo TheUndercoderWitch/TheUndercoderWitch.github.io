@@ -188,3 +188,42 @@
     }
     /*--- portfolio - end ---*/
 }
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- header - start ---*/
+    #banner img{
+        width: 80%;
+    }
+    /*--- header - end ---*/
+
+    /*--- justification - start ---*/
+    #justification_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*--- justification - end ---*/
+
+    /*--- portfolio - start ---*/
+    #portfolio h2{
+        text-align: center;
+    }
+    #projects{
+        grid-template-columns: repeat(1, 360px);
+    }
+    .project{
+        width: 360px;
+        height: 360px;
+    }
+    .project_content{
+        width: 310px;
+        height: 310px;
+        margin-top: -360px;
+    }
+    /*--- portfolio - end ---*/
+
+    /*--- contact - start ---*/
+    #contact h2{
+        text-align: center;
+    }
+    /*--- contact - end ---*/
+}

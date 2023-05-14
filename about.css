@@ -109,3 +109,22 @@
     }
     /*--- who are we & our mission - end ---*/
 }
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- who are we & our mission - start ---*/
+    #who_are_we img, #our_mission img{
+        width: 80%;
+    }
+    /*--- who are we & our mission - end ---*/
+ 
+    /*--- staff - start ---*/
+    #staff_members{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+    .staff_member{
+        padding: 20px 10px;
+    }
+    /*--- staff - end ---*/
+}

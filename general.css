@@ -56,6 +56,12 @@ nav img{
     margin-left: 20px;
     transition: 0.5s;
 }
+#nav_btn{
+    display: none;
+}
+#mobile_nav_links{
+    display: none;
+}
 #scroll_affected_nav.unscrolled_nav a{
     color: white;
     text-shadow: 0 0 10px black;
@@ -206,6 +212,55 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
         column-gap: 10px;
+    }
+    /*--- footer end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- general start ---*/
+    h1{
+        font-size: 50px;
+    }
+    /*--- general start ---*/
+
+    /*--- nav start ---*/
+    #nav_links{
+        display: none;
+    }
+    #nav_btn{
+        display: block;
+        font-size: 75px;
+        line-height: 45px;
+        margin: 0;
+    }
+    #mobile_nav_links{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(225, 225, 225);
+        z-index: 99;
+        transition: 0.5s;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #mobile_nav_links a{
+        text-decoration: none;
+        font-size: 30px;
+        margin-left: 20px;
+        transition: 0.5s;
+        color: black;
+    }
+    /*--- nav end ---*/
+
+    /*--- footer start ---*/
+    footer{
+        padding: 7.5vw;
+        grid-template-columns: repeat(1, 1fr);
     }
     /*--- footer end ---*/
 }

@@ -65,5 +65,14 @@
         color: black;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
+}
 
+/*phone styling*/
+@media(max-width:450px){
+    .service img{
+        width: 80%;
+    }
+    .service_text{
+        width: 100%;
+    }
 }

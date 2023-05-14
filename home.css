@@ -255,3 +255,53 @@
     }
     /*--- customer appreciation - end ---*/
 }
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- banner start ---*/
+    #banner_content img{
+        width: 80%;
+    }
+    #banner_content h1{
+        width: 80%;
+    }
+    /*--- banner end ---*/
+
+    /*--- who are we & our mission - start ---*/
+    #who_are_we img, #our_mission img{
+        width: 80%;
+    }
+    /*--- who are we & our mission - end ---*/
+
+    /*--- flexing - start ---*/
+    #numbers{
+        grid-template-columns: repeat(1, 1fr);    
+    }
+    #brands{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*--- flexing - end ---*/
+
+    /*--- services - start ---*/
+    #services_holder{
+        flex-direction: column;
+    }
+    .service{
+        width: 360px;
+        height: 360px;
+        margin: 5px 0;
+    }
+    .service_text_holder{
+        margin-top: -360px;
+        padding-top: 280px;
+    }
+    /*--- services - end ---*/
+
+    /*--- customer appreciation - start ---*/
+    #comments{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+    /*--- customer appreciation - end ---*/
+}
