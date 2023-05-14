@@ -84,3 +84,17 @@ section hr{
     color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/*big tablets styling*/
+@media(max-width:1079px){
+    section{
+        flex-direction: column;
+    }
+    section img{
+        width: 75%;
+        margin-bottom: 50px;
+    }
+    form{
+        width: 75%;
+    }
+}

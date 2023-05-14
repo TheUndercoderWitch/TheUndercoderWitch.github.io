@@ -29,7 +29,7 @@
 #justification_cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 20px;
 }
 .justification_card{
     background-color: rgb(225, 225, 225);
@@ -56,7 +56,7 @@
 }
 #projects{
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 400px);
     grid-gap: 5px;
 }
 .project{
@@ -64,17 +64,19 @@
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    width: 400px;
+    height: 400px;
 }
 .project_background{
+    width: inherit;
+    height: inherit;
     aspect-ratio: 1/1;
-    width: 350px;
-    height: 350px;
     background-color: rgb(225, 225, 225);
 }
 .project_content{
-    width: 300px;
-    height: 300px;
-    margin-top: -350px;
+    width: 350px;
+    height: 350px;
+    margin-top: -400px;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -121,3 +123,68 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /*--- contact - end ---*/
+
+/*big tablets styling*/
+@media(max-width:1079px){
+    /*--- header - start ---*/
+    #banner{
+        flex-direction: column;
+    }
+    #banner img{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #banner h1{
+        text-align: center;
+    }
+    /*--- header - end ---*/
+    
+    /*--- portfolio - start ---*/
+    #projects{
+        display: grid;
+        grid-template-columns: repeat(3, 275px);
+        grid-gap: 10px;
+    }
+    .project{
+        width: 275px;
+        height: 275px;
+    }
+    .project_background{
+        width: inherit;
+        height: inherit;
+        aspect-ratio: 1/1;
+        background-color: rgb(225, 225, 225);
+    }
+    .project_content{
+        width: 235px;
+        height: 225px;
+        margin-top: -275px;
+        padding: 20px;
+    }
+    /*--- portfolio - end ---*/
+    
+    /*--- contact - start ---*/
+    #contact{
+        padding: 7.5vh 5vw;
+        min-height: 30vh;
+    }
+    /*--- contact - end ---*/
+}
+
+/*regular tablets styling*/
+@media(max-width:850px){
+    /*--- portfolio - start ---*/
+    #projects{
+        grid-template-columns: repeat(2, 325px);
+    }
+    .project{
+        width: 325px;
+        height: 325px;
+    }
+    .project_content{
+        width: 275px;
+        height: 275px;
+        margin-top: -325px;
+    }
+    /*--- portfolio - end ---*/
+}
