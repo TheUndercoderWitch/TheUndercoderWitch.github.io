@@ -1,570 +1,179 @@
-/*--- Who are we start ---*/
-#who_are_we{
-    display: flex;
-    align-items: center;
+/*--- banner start ---*/
+#banner{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background: url(pictures/illustrations/home_banner.webp) top center;
 }
-#who_are_we img{
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    width: 400px;
-    margin-right: 50px;
-}
-#who_are_we p{
-    font-size: 25px;
-    margin: 0;
-    text-align: justify;
-}
-/*--- Who are we end ---*/
-
-/*--- our mission start ----*/
-#our_mission{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#mission_illustration{
-    width: 400px;
-    margin-right: 50px;
-}
-#our_mission p{
-    font-size: 25px;
-    text-align: justify;
-    margin: 0;
-}
-/*--- our mission end ----*/
-
-/*--- services start ---*/
-#services{
-    display: flex;
-    align-items: center;
-    width: 80vw;
-}
-#services img{
-    width: 400px;
-    margin-right: 50px;
-}
-#services_holder{
-    display: flex;
-}
-.service{
-    aspect-ratio: 1/1;
-    width: 200px;
-    padding: 25px;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
+#banner_content{
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    color: white;
+    position: absolute;
+}
+#banner_content img{
+    width: 700px;
+    filter: drop-shadow(0 0 10px black);
+}
+#banner_content h1{
+    filter: drop-shadow(0 0 10px black);
+}
+/*--- banner end ---*/
+
+/*--- who are we & our mission - start ---*/
+#who_are_we, #our_mission{
+    display: flex;
+    align-items: center;
+}
+#who_are_we img, #our_mission img{
+    width: 400px;
+    margin-right: 50px;
+}
+#who_are_we img{
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+#who_are_we p, #our_mission p{
+    font-size: 30px;
+    text-align: justify;
+}
+/*--- who are we & our mission - end ---*/
+
+/*--- services - start ---*/
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services_holder{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.service{
+    width: 375px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     text-decoration: none;
+}
+.service img{
+    width: inherit;
+    height: inherit;
+    background-color: black;
+}
+.service_text_holder{
+    margin-top: -375px;
+    padding: 250px;
+    width: inherit;
+    overflow: 0;
     transition: 0.5s;
-    margin-right: 10px;
+    opacity: 0.5;
 }
-.service:hover{
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: black;
+.service_text_holder:hover{
+    padding: 0;
+    opacity: 1;
 }
+.service_text{
+    width: 325px;
+    height: 325px;
+    padding: 25px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.service h3{
+    line-height: 40px;
+    height: 80px;
+}
+.service_text p{
+    font-size: 30px;
+    text-align: justify;
+    margin: 0;
+}
+/*--- services - end ---*/
 
-.service:nth-child(2){
-    transition-delay: 0.25s;
-}
-/*--- services end ---*/
-
-/*--- customer appreciation start ---*/
+/*--- customer appreciation - start ---*/
 #customer_appreciation{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#customer_appreciation_txt{
-    margin: 0 0 15px;
-    font-size: 25px;
-    text-align: center;
-}
-
-#comments_slider{
-    display: flex;
-    align-items: center;
-}
-#comments_slider i{
-    font-size: 35px;
+#comments_holder{
+    width: 100%;
 }
 #comments{
-    display: flex;
-    width: 3850px;
-}
-#comments_holder{
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
 }
 .comment{
-    aspect-ratio: 3/2;
-    width: 450px;
-    padding: 15px;
-    margin: 0 10px;
-    background-color: rgb(240, 240, 240);
-    border-radius: 5px;
+    aspect-ratio: 1/1;
+    background-color: black;
+    padding: 20px;
+    color: white;
 }
 .comment_header{
-    display: flex;
-    align-content: center;
-    height: 20%;
-}
-.comment_header img{
-    aspect-ratio: 1/1;
-    height: 100%;
-    border-radius: 1000px;
-    background-color: black;
-    margin-right: 15px;
+    text-align: center;
 }
 .comment_header p{
-    font-size: 25px;
+    font-size: 30px;
     margin: 0;
 }
 .comment_content{
     font-size: 25px;
     text-align: justify;
-}
-/*--- customer appreciation end ---*/
-
-/*--- staff start ----*/
-#staff{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#staff_members{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 275px);
-    width: 100%;
-    justify-content: center;
-    grid-gap: 25px;
-}
-.staff_member{
-    aspect-ratio: 2/3;
-    width: 245px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 5px;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.staff_member:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.staff_member img{
-    width: 70%;
-    aspect-ratio: 1/1;
-    border-radius: 1000px;
-    margin-bottom: 20px;
-}
-.staff_member p{
-    font-size: 30px;
     margin: 0;
 }
-.staff_member:nth-child(2){
-    transition-delay: 0.25s;
-}
-.staff_member:nth-child(3){
-    transition-delay: 0.5s;
-}
-.staff_member:nth-child(4){
-    transition-delay: 0.75s;
-}
-/*--- staff end ----*/
+/*--- customer appreciation - end ---*/
 
-/*--- flexing start ---*/
-#numbers, #brands{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+/*--- flexing - start ---*/
+#flexing{
+    padding: 10vh 5vw;
 }
-#numbers_holder, #brands_holder{
+#numbers, #brands{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
 }
 
 .number{
+    aspect-ratio: 1/1;
+    background-color: rgb(225, 225, 225);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(225, 225, 225);
-    border-radius: 5px;
-    height: 200px;
-    width: 200px;
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
 }
 .number p{
-    font-size: 25px;
+    font-size: 30px;
     margin: 0;
 }
-.number:nth-child(2){
-    transition-delay: 0.25s;
-}
-.number:nth-child(3){
-    transition-delay: 0.5s;
-}
-.number:nth-child(4){
-    transition-delay: 0.75s;
+#numbers{
+    margin-bottom: 50px;
 }
 
-#brands{
-    margin-top: 30px;
-}
-#mobile_brands{
-    display: none;
-}
-.brand img{
-    width: 225px;
+#brands img{
+    width: 100%;
     filter: grayscale(100%);
     transition: 0.25s;
 }
-.brand img:hover{
+#brands img:hover{
     filter: grayscale(0%);
-    transform: scale(105%);
 }
-.brand:nth-child(2){
-    transition-delay: 0.25s;
-}
-.brand:nth-child(3){
-    transition-delay: 0.5s;
-}
-.brand:nth-child(4){
-    transition-delay: 0.75s;
-}
-/*--- flexing end ---*/
-
-/*--- contact start ---*/
-#contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#email, #socials{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    min-height: 80vh;
-    padding: 2.5vh;
-    color: black;
-}
-
-#email form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-#email form input, #email form textarea{
-    width: 80%;
-    border: 0;
-    border-radius: 5px;
-    margin: 0 0 5px;
-    min-height: 25px;
-    padding: 3px;
-    font-size: 20px;
-    background-color: rgb(228, 228, 228);
-}
-#email form button{
-    background-color: black;
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    font-size: 25px;
-    padding: 5px 30px;
-    margin-top: 10px;
-    transition: 0.25s;
-}
-#email form button:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#socials{
-    transition-delay: 0.25s;
-}
-#socials_holder{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 50px;
-    margin: 0 0 10px;
-    border-radius: 1000px;
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    transition: 0.25s;
-}
-.social:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.social i{
-    font-size: 35px;
-    margin-right: 10px;
-}
-.social p{
-    font-size: 25px;
-}
-/*--- contact end ---*/
-
-/*big tablet styling*/
-@media(max-width:1079px){    
-    /*--- staff start ----*/
-    .staff_member:nth-child(2){
-        transition-delay: 0s;
-    }
-    .staff_member:nth-child(3){
-        transition-delay: 0s;
-    }
-    .staff_member:nth-child(4){
-        transition-delay: 0s;
-    }
-    /*--- staff end ----*/   
-    
-    /*--- services start ---*/
-    .service{
-        width: 180px;
-    }
-    /*--- services end ---*/ 
-    
-    /*--- flexing start ---*/
-    .number{
-        height: 175px;
-        width: 175px;
-        padding: 15px;
-    }
-    .brand img{
-        width: 190px;
-    }
-    /*--- flexing end ---*/
-
-    /*--- contact start ---*/
-    #contact{
-        flex-direction: column;
-    }
-    #email, #socials{
-        width: auto;
-        min-height: 40vh;
-        width: 100%;
-    }
-    #email form input, #email form textarea{
-        width: 70%;
-        min-height: 30px;
-    }
-    .social{
-        width: 70%;
-    } 
-    /*--- contact end ---*/
-}
-
-/*regular tablet styling*/
-@media(max-width:950px){
-    /*--- Who are we start ---*/
-    #who_are_we{
-        flex-direction: column;
-        justify-content: center;
-        min-height: 65vh;
-    }
-    #who_are_we img{
-        width: 350px;
-        margin-right: 0;
-        margin-bottom: 50px;
-    }
-    #who_are_we h1{
-        text-align: center;
-    }
-    /*--- Who are we end ---*/
-    
-    /*--- our mission start ----*/
-    #our_mission{
-        flex-direction: column;
-        min-height: 65vh;
-    }
-    #mission_illustration{
-        width: 350px;
-        margin-right: 0;
-        margin-bottom: 50px;
-    }
-    #our_mission h1{
-        text-align: center;
-    }
-    /*--- our mission end ----*/
-    
-    /*--- services start ---*/    
-    #services{
-        flex-direction: column;
-        width: auto;
-    }
-    #services h1{
-        text-align: center;
-    }
-    #services img{
-        width: 350px;
-        margin-right: 0px;
-        margin-bottom: 50px;
-    }
-    #services_holder{
-        justify-content: center;
-    }
-    .service{
-        width: 250px;
-    }
-    /*--- services end ---*/ 
-    
-    /*--- staff start ----*/
-    #staff{
-        min-height: 60vh;
-    }
-    /*--- staff end ----*/
-    
-    /*--- flexing start ---*/
-    #flexing{
-        padding: 10vh 5vw;
-    }
-    .number{
-        height: 135px;
-        width: 135px;
-    }
-    .number p{
-        font-size: 20px;
-    }
-    .brand img{
-        width: 150px;
-        filter: grayscale(100%);
-        transition: 0.25s;
-    }
-    .brand img:hover{
-        filter: grayscale(0%);
-        transform: scale(105%);
-    }
-    /*--- flexing end ---*/
-}
-
-/*phone styling*/
-@media(max-width:420px){
-    /*--- Who are we start ---*/
-    #who_are_we img{
-        width: 80%;
-    }
-    /*--- Who are we end ---*/
-    
-    /*--- our mission start ----*/
-    #mission_illustration{
-        width: 80%;
-    }
-    /*--- our mission end ----*/
-    
-    /*--- services start ---*/  
-    #services img{
-        width: 80%;
-    }
-    #services_holder{
-        flex-direction: column;
-        align-items: center;
-    }
-    .service{
-        margin: 0 0 10px;
-        width: 250px;
-    }
-    /*--- services end ---*/ 
-    
-    /*--- customer appreciation start ---*/
-    #customer_appreciation h1{
-        text-align: center;
-    }
-    
-    .comment{
-        aspect-ratio: 2/3;
-        width: 280px;
-        padding: 15px;
-        margin: 0 5px;
-    }
-    .comment_header{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-    }
-    .comment_header img{
-        height: 80px;
-        width: 80px;
-    }
-    .comment_header p{
-        font-size: 22.5px;
-    }
-    .comment_content{
-        font-size: 22.5px;
-    }
-    /*--- customer appreciation end ---*/  
-    
-    /*--- flexing start ---*/
-    #flexing h2{
-        text-align: center;
-    }
-    #numbers_holder, #brands_holder{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .number{
-        margin: 20px 0;
-        height: 250px;
-        width: 250px;
-    }
-    .number p{
-        font-size: 25px;
-    }
-    .brand img{
-        width: 280px;
-        margin: 20px 0;
-    }
-    #brands{
-        display: none;
-    }
-    #mobile_brands{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    /*--- flexing end ---*/
-
-    /*--- contact start ---*/  
-    #email form input, #email form textarea{
-        width: 100%;
-    }
-    .social{
-        width: 100%;
-    }      
-    /*--- contact end ---*/
-}
+/*--- flexing - end ---*/

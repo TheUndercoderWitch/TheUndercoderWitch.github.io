@@ -1,168 +1,118 @@
-/*--- header start ---*/
-#header{
+/*--- header - start ---*/
+#banner{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-
-#service_illustration{
-    width: 400px;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+#banner img{
     margin-right: 50px;
 }
-#header_text{
-    transition-delay: 0.25s;
-}
-#header p{
-    font-size: 25px;
+#banner p{
+    font-size: 30px;
     text-align: justify;
-    margin: 0;
 }
-/*--- header end ---*/
+/*--- header - end ---*/
 
-/*--- justification start ---*/
-#justification h1{
-    text-align: center;
-}
+/*--- justification - start ---*/
 #justification{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#justification_text{
-    font-size: 25px;
+#justification h2{
+    text-align: center;
+}
+#justification_description{
+    font-size: 30px;
     text-align: justify;
-    margin: 0 0 50px;
 }
-#justification_stats{
+#justification_cards{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-    width: 100%;
-    justify-content: center;
 }
-.justification_stat{
+.justification_card{
+    background-color: rgb(225, 225, 225);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 3/2;
+}
+.justification_card p{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+/*--- justification - end ---*/
+
+/*--- portfolio - start ---*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 5px;
+}
+.project{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.project_background{
     aspect-ratio: 1/1;
-    width: 200px;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(225, 225, 225);
+}
+.project_content{
+    width: 300px;
+    height: 300px;
+    margin-top: -350px;
     padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(128, 128, 128);
-    border-radius: 5px;
-    text-align: center;
-}
-.justification_stat p{
-    font-size: 25px;
-    margin: 0;
-}
-
-.justification_stat:nth-child(2){
-    transition-delay: 0.25s;
-}
-.justification_stat:nth-child(3){
-    transition-delay: 0.5s;
-}
-.justification_stat:nth-child(4){
-    transition-delay: 0.75s;
-}
-.justification_stat:nth-child(5){
-    transition-delay: 1s;
-}
-.justification_stat:nth-child(6){
-    transition-delay: 1.25s;
-}
-/*--- justification end ---*/
-
-/*--- work start ---*/
-#work{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;   
-}
-#work_holder{
-    width: 100%;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 325px);
-    grid-gap: 5px;
-}
-.work{
-    text-decoration: none;
-    color: white;
-}
-.work_content{
-    aspect-ratio: 1/1;
-    width: 325px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-.work_illustration{
-    aspect-ratio: inherit;
-    width: inherit;
-    background-color: rgb(200, 200, 200);
-}
-.work_text{
-    aspect-ratio: inherit;
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -100%;
-    background-color: rgba(0, 0, 0, 0.25);
-    filter: grayscale(100%);
     transition: 0.25s;
 }
-.work_text:hover{
-    background-color: rgba(0, 0, 0, 0.75);
-    filter: grayscale(0%);
+.project_content:hover{
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.work_text img{
-    width: 60%;
+.project_content img{
+    width: 70%;
 }
-.work_text p{
-    font-size: 25px;
+.project_content p{
+    font-size: 30px;
     text-align: center;
-    width: 90%;
-    margin: 15px 0 0;
+    margin: 10px 0 0;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
+/*--- portfolio - end ---*/
 
-.work:nth-child(2){
-    transition-delay: 0.25s;
-}
-.work:nth-child(3){
-    transition-delay: 0.5s;
-}
-.work:nth-child(4){
-    transition-delay: 0.75s;
-}
-.work:nth-child(5){
-    transition-delay: 1s;
-}
-.work:nth-child(6){
-    transition-delay: 1.25s;
-}
-/*--- work end ---*/
-
-/*--- contact start ---*/
+/*--- contact - start ---*/
 #contact{
+    padding: 10vh 5vw;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #contact a{
-    color: white;
     background-color: black;
-    font-size: 25px;
+    color: white;
+    font-size: 30px;
     text-decoration: none;
+    padding: 5px 30px;
     border-radius: 5px;
-    padding: 10px 30px;
     transition: 0.25s;
 }
 #contact a:hover{
@@ -170,88 +120,4 @@
     color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/*--- contact end ---*/
-
-/*big tablet styling*/
-@media(max-width:1079px){
-    /*--- header start ---*/
-    #header{
-        flex-direction: column;
-    }
-    #service_illustration{
-        width: 350px;
-        margin-right: 0;
-        margin-bottom: 50px;
-    }
-    h1{
-        text-align: center;
-    }
-    /*--- header end ---*/
-
-    .work:nth-child(2){
-        transition-delay: 0s;
-    }
-    .work:nth-child(3){
-        transition-delay: 0s;
-    }
-    .work:nth-child(4){
-        transition-delay: 0s;
-    }
-    .work:nth-child(5){
-        transition-delay: 0s;
-    }
-    .work:nth-child(6){
-        transition-delay: 0s;
-    } 
-}
-
-/*regular tablet styling*/
-@media(max-width:950px){
-    /*--- header start ---*/
-    #service_illustration{
-        margin-right: 0;
-        margin-bottom: 50px;
-    }
-    /*--- header end ---*/
-    
-    /*--- justification start ---*/
-    #justification_stats{
-        grid-template-columns: repeat(auto-fill, 200px);
-        grid-gap: 10px;
-    }
-    .justification_stat{
-        width: 160px;
-        padding: 20px;
-    }
-    /*--- justification end ---*/
-}
-
-/*phone styling*/
-@media(max-width:420px){
-    /*--- header start ---*/
-    #service_illustration{
-        width: 80%;
-    }
-    h1{
-        text-align: center;
-    }
-    /*--- header end ---*/
-    
-    /*--- justification start ---*/
-    #justification_stats{
-        width: 100%;
-        grid-template-columns: repeat(auto-fill, 170px);
-        grid-gap: 10px;
-    }
-    .justification_stat{
-        width: 140px;
-        padding: 15px;
-    }
-    /*--- justification end ---*/
-    
-    /*--- contact start ---*/
-    #contact h2{
-        text-align: center;
-    }
-    /*--- contact end ---*/
-}
+/*--- contact - end ---*/

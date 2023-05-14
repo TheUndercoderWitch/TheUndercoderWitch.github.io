@@ -1,0 +1,66 @@
+/*--- who are we & our mission - start ---*/
+#who_are_we, #our_mission{
+    display: flex;
+    align-items: center;
+}
+#who_are_we img, #our_mission img{
+    width: 400px;
+    margin-right: 50px;
+}
+#who_are_we img{
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+#who_are_we p, #our_mission p{
+    font-size: 30px;
+    text-align: justify;
+}
+/*--- who are we & our mission - end ---*/
+
+/*--- staff - start ---*/
+#staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#staff_description{
+    margin: 0 0 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#staff_members{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+.staff_member{
+    background-color: black;
+    aspect-ratio: 2/3;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.25s;
+}
+.staff_member:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.staff_member img{
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    margin-bottom: 15px;
+}
+.staff_member p{
+    font-size: 30px;
+    margin: 0;
+}
+/*--- staff - end ---*/

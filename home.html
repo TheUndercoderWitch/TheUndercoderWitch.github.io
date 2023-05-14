@@ -4,230 +4,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="home page - x0 media the best digital marketing agency in haiti for ecommerce and product businesses">
+    <meta name="description" content="Home page of X0 Media the best digital marketing agency in Haiti">
 
-    <!--Local css-->
+    <!--- Local css --->
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="scroll_animations.css">
-    <!--Font awesome link-->
+    <!--- font awesome link --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script defer src="home.js"></script>
-    <script defer src="scroll_animations.js"></script>
-
-    <link rel="shortcut icon" href="pictures/branding/favicon.png" type="image/x-icon">
-    <title>X0 Media</title>
+    <script defer src="general.js"></script>
+    <link rel="shortcut icon" href="pictures/branding/favicon.webp" type="image/x-icon">
+    <title>Home - X0 Media</title>
 </head>
 <body>
-    <header>
-        <select name="" id="">
-            <option value="">En</option>
-            <option value="">Fr</option>
-        </select>
-    </header>
+    <nav id="scroll_affected_nav" class="unscrolled_nav">
+        <a href="home.html"><img src="pictures/branding/X0 logo black.webp" alt=""></a>
 
+        <div id="nav_links">
+            <a href="home.html" class="current_nav_page">Accueil</a>
+            <a href="services.html" class="nav_page">Services</a>
+            <a href="about.html" class="nav_page">A propos</a>
+            <a href="contact.html" class="nav_page">Contact</a>
+        </div>
+    </nav>
+    
     <main>
+        <div id="banner">
+            <div id="banner_content">
+                <img src="pictures/branding/logo with text white.webp" alt="">
+                <h1>Votre partenaire de croissance!</h1>
+            </div>
+        </div>
+
         <section id="who_are_we">
             <img src="pictures/branding/X0 logo white.webp" alt="">
-            <div id="who_are_we_text">
-                <h1>Who are we ?</h1>
-                <p>X0 Media is an online-based agency specialized in digital marketing services such as social media advertising that exposes our customer businesses a wide audience that fit the caracteristics of their ideal customer.</p>
+            <div id="who_are_we_content">
+                <h2>Qui sommes-nous ?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, magni maiores voluptatum facilis porro error et, cum temporibus quia atque modi aut autem repellendus reiciendis ad minus sunt magnam neque?
+                </p>
             </div>
         </section>
-    
+
         <section id="our_mission">
-            <img src="pictures/illustrations/mission.webp" alt="" id="mission_illustration">
-            <div id="mission_text">
-                <h1>Our mission</h1>
-                <p>Our mission is to take the burden of marketing their business online off of the shoulders of our customers so they can put their team's time and effort in tasks that they excell at, increasing their growth rate.</p>
+            <img src="pictures/illustrations/mission.webp" alt="">
+            <div id="our_mission_text">
+                <h2>Notre mission !</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi inventore, minima facilis nisi doloribus. Architecto fugit ipsa debitis odit harum officiis quasi esse sint. Voluptatum similique incidunt tempora rem!
+                </p>
             </div>
         </section>
-    
+
         <section id="services">
-            <img src="pictures/illustrations/services.webp" alt="">
-            <div id="servics_content">
-                <h1>Our services</h1>
-                <div id="services_holder">
-                    <a href="service-social_media_advertising.html" class="service slide_right">
-                        <h5>Social media advertising</h5>
-                    </a>
-                    <a href="service-social_media_advertising.html" class="service slide_right">
-                        <h5>Social media advertising</h5>
-                    </a>
-                </div>
+            <h2>Nos services</h2>
+
+            <div id="services_holder">
+                <a href="service-sma.html" class="service">
+                    <img src="pictures/illustrations/social_media_advertising.webp" alt="">
+                    <div class="service_text_holder">
+                        <div class="service_text">
+                            <h3>Publicité digitale</h3>
+                            <p>Nos gérons des campagnes de marketing pour votre entreprise sur les réseaux sociaux.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="service-sma.html" class="service">
+                    <img src="pictures/illustrations/social_media_advertising.webp" alt="">
+                    <div class="service_text_holder">
+                        <div class="service_text">
+                            <h3>Publicité digitale</h3>
+                            <p>Nos gérons des campagnes de marketing pour votre entreprise sur les réseaux sociaux.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="service-sma.html" class="service">
+                    <img src="pictures/illustrations/social_media_advertising.webp" alt="">
+                    <div class="service_text_holder">
+                        <div class="service_text">
+                            <h3>Publicité digitale</h3>
+                            <p>Nos gérons des campagnes de marketing pour votre entreprise sur les réseaux sociaux.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
-            
+
         <section id="customer_appreciation">
-            <h1>Customer appreciation</h1>
-            <p id="customer_appreciation_txt">See our customer's opinions on our services :</p>
-            
-            <div id="comments_slider">
-                <i class="fa-solid fa-chevron-left" onclick="previousComment()"></i>
-                <div id="comments_holder">
-                    <div id="comments">
-                        <div class="comment">
-                            <div class="comment_header">
-                                <img src="" alt="">
-                                <div class="comment_info">
-                                    <h5>Govain Carlhensky Renauld</h5>
-                                    <p>Founder of X0 Media</p>
-                                </div>
-                            </div>
-                            <p class="comment_content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae cum reiciendis quis consequatur quam commodi illum ullam facere laboriosam hic nisi, quaerat eveniet aliquam quasi doloremque ea ratione quia.
-                            </p>
+            <h2>Commentaires de nos clients</h2>
+
+            <div id="comments_holder">
+                <div id="comments">
+                    <div class="comment">
+                        <div class="comment_header">
+                            <h4>Govain Carlhensky R.</h4>
+                            <p>Fondateur de X0 Media</p>
                         </div>
-                        <div class="comment">
-                            <div class="comment_header">
-                                <img src="" alt="">
-                                <div class="comment_info">
-                                    <h5>Bino Ladino</h5>
-                                    <p>Founder Alawakba</p>
-                                </div>
-                            </div>
-                            <p class="comment_content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae cum reiciendis quis consequatur quam commodi illum ullam facere laboriosam hic nisi, quaerat eveniet aliquam quasi doloremque ea ratione quia.
-                            </p>
+                        <hr>
+                        <p class="comment_content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellat minima ratione exercitationem. Odio corporis saepe commodi totam quisquam ratione neque vitae veritatis!
+                        </p>
+                    </div>                   
+                    <div class="comment">
+                        <div class="comment_header">
+                            <h4>Govain Carlhensky R.</h4>
+                            <p>Fondateur de X0 Media</p>
                         </div>
-                        <div class="comment">
-                            <div class="comment_header">
-                                <img src="" alt="">
-                                <div class="comment_info">
-                                    <h5>Joe Black</h5>
-                                    <p>Founder of White Inc.</p>
-                                </div>
-                            </div>
-                            <p class="comment_content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae cum reiciendis quis consequatur quam commodi illum ullam facere laboriosam hic nisi, quaerat eveniet aliquam quasi doloremque ea ratione quia.
-                            </p>
+                        <hr>
+                        <p class="comment_content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellat minima ratione exercitationem. Odio corporis saepe commodi totam quisquam ratione neque vitae veritatis!
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment_header">
+                            <h4>Govain Carlhensky R.</h4>
+                            <p>Fondateur de X0 Media</p>
                         </div>
-                        <div class="comment">
-                            <div class="comment_header">
-                                <img src="" alt="">
-                                <div class="comment_info">
-                                    <h5>Donald Trumpet</h5>
-                                    <p>Founder of Yeehaw</p>
-                                </div>
-                            </div>
-                            <p class="comment_content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae cum reiciendis quis consequatur quam commodi illum ullam facere laboriosam hic nisi, quaerat eveniet aliquam quasi doloremque ea ratione quia.
-                            </p>
-                        </div>
-                        <div class="comment">
-                            <div class="comment_header">
-                                <img src="" alt="">
-                                <div class="comment_info">
-                                    <h5>Red Neck</h5>
-                                    <p>Founder of ThatllDo</p>
-                                </div>
-                            </div>
-                            <p class="comment_content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae cum reiciendis quis consequatur quam commodi illum ullam facere laboriosam hic nisi, quaerat eveniet aliquam quasi doloremque ea ratione quia.
-                            </p>
-                        </div>
+                        <hr>
+                        <p class="comment_content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellat minima ratione exercitationem. Odio corporis saepe commodi totam quisquam ratione neque vitae veritatis!
+                        </p>
                     </div>
                 </div>
-                <i class="fa-solid fa-chevron-right" onclick="nextComment()"></i>
             </div>
         </section>
-    
-        <section id="staff">
-            <h1>Meet the staff</h1>
-            
-            <div id="staff_members">
-                <a href="" target="_blank" class="staff_member slide_right">
-                    <img src="pictures/staff_members/govain_c_r/WhatsApp Image 2021-06-19 at 07.50.33.jpeg" alt="">
-                    <h5>Govain Carlhensky Renauld</h5>
-                    <p>Founder</p>
-                </a>
-                <a href="" target="_blank" class="staff_member slide_right">
-                    <img src="pictures/staff_members/govain_c_r/WhatsApp Image 2021-06-19 at 07.50.33.jpeg" alt="">
-                    <h5>Govain Carlhensky Renauld</h5>
-                    <p>Founder</p>
-                </a>
-                <a href="" target="_blank" class="staff_member slide_right">
-                    <img src="pictures/staff_members/govain_c_r/WhatsApp Image 2021-06-19 at 07.50.33.jpeg" alt="">
-                    <h5>Govain Carlhensky Renauld</h5>
-                    <p>Founder</p>
-                </a>
-            </div>
-        </section>
-    
-        <section id="flexing">
+
+        <div id="flexing">
             <div id="numbers">
-                <div id="numbers_holder">
-                    <div class="number slide_right">
-                        <h3>$10m</h3>
-                        <p>Investied in marketing by our clients</p>
-                    </div>
-                    <div class="number slide_right">
-                        <h3>$50m</h3>
-                        <p>Generated for our customers</p>
-                    </div>
-                    <div class="number slide_right">
-                        <h3>50+</h3>
-                        <p>Satisfied customers</p>
-                    </div> 
-                    <div class="number slide_right">
-                        <h3>0</h3>
-                        <p>Offices</p>
-                    </div>
+                <div class="number">
+                    <h4>+50M</h4>
+                    <p>Random text bla bla bla</p>
+                </div>
+                <div class="number">
+                    <h4>+50M</h4>
+                    <p>Random text bla bla bla</p>
+                </div>
+                <div class="number">
+                    <h4>+50M</h4>
+                    <p>Random text bla bla bla</p>
+                </div>
+                <div class="number">
+                    <h4>+50M</h4>
+                    <p>Random text bla bla bla</p>
                 </div>
             </div>
             <div id="brands">
-                <div id="brands_holder">
-                    <a href="https://www.adobe.com/" class="brand slide_right"><img src="pictures/trusting_brands/adobe.webp" alt=""></a>
-                    <a href="https://fr.airbnb.com/?_set_bev_on_new_domain=1683775194_M2M5OGQzNzg2MGZl" class="brand slide_right"><img src="pictures/trusting_brands/airbnb.webp" alt=""></a>
-                    <a href="https://www.amazon.com/" class="brand slide_right"><img src="pictures/trusting_brands/amazon.webp" alt=""></a>
-                    <a href="https://www.walmart.com/" class="brand slide_right"><img src="pictures/trusting_brands/walmart.webp" alt=""></a>
-                </div>
+                <img src="pictures/trusting_brands/adobe.webp" alt="">
+                <img src="pictures/trusting_brands/airbnb.webp" alt="">
+                <img src="pictures/trusting_brands/amazon.webp" alt="">
+                <img src="pictures/trusting_brands/walmart.webp" alt="">
             </div>
-            <div id="mobile_brands" class="slide_up">
-                <div id="mobile_brands_holder">
-                    <a href="" class="mobile_brand"></a>
-                </div>
-            </div>
-        </section>  
-    
-        <section id="contact">
-            <div id="email">
-                <h2>Email us</h2>
-    
-                <form action="" method="get">
-                    <input type="text" name="" id="" placeholder="Enter your full name">
-                    <input type="text" name="" id="" placeholder="Enter your email adress">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
-                    <button type="submit">Send email</button>
-                </form>
-            </div>
-    
-            <div id="socials">
-                <h2>DM & follow us</h2>
-    
-                <div id="socials_holder">
-                    <a href="https://www.instagram.com/x0media.ig" target="_blank" class="social">
-                        <i class="fa-brands fa-instagram"></i>
-                        <p>@x0media.ig</p>
-                    </a>
-                    <a href="https://twitter.com/x0media_tw" target="_blank" class="social">
-                        <i class="fa-brands fa-twitter"></i>
-                        <p>@x0media.tw</p>
-                    </a>
-                    <a href="https://web.facebook.com/people/X0-Media/100092291661433/" target="_blank" class="social">
-                        <i class="fa-brands fa-facebook"></i>
-                        <p>X0 Media</p>
-                    </a>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <a href="home.html"><img src="pictures/branding/logo with text white.webp" alt="" id="footer_logo"></a>
-        <p id="footer_links"><a href="privacy_policy.html">Privacy policy</a> | <a href="terms_&_conditions.html">Terms & conditions</a></p>
-        <p id="footer_copy">&copy; X0 Media 2023. All rights reserved.</p>        
+        <div class="footer_section" id="footer_logo">
+            <a href="home.html"><img src="pictures/branding/logo with text white.webp" alt=""></a>
+            <h2>Votre partenaire de croissance</h2>
+        </div>
+
+        <div class="footer_section" id="footer_sitemap">
+            <a href="home.html" class="current_footer_page">Accueil</a>
+            <a href="services.html" class="footer_page">Services</a>
+            <a href="about.html" class="footer_page">A propos</a>
+            <a href="contact.html" class="footer_page">Contact</a>
+        </div>
+
+        <div class="footer_section" id="footer_contact">
+            <a href="mailto:" class="footer_social">
+                <i class="fa-regular fa-envelope"></i>
+                <p>contact@x0media.com</p>
+            </a>
+            <a href="https://web.facebook.com/people/X0-Media/100092291661433/" target="_blank" class="footer_social">
+                <i class="fa-brands fa-facebook"></i>
+                <p>X0 Media</p>
+            </a>
+            <a href="https://www.instagram.com/x0media.ig" target="_blank" class="footer_social">
+                <i class="fa-brands fa-instagram"></i>
+                <p>@x0media.ig</p>
+            </a>
+            <a href="https://twitter.com/x0media_tw" target="_blank" class="footer_social">
+                <i class="fa-brands fa-twitter"></i>
+                <p>@x0media_tw</p>
+            </a>
+        </div>
+
+        <div class="footer_section" id="footer_text_pages">
+            <a href="">Police de confidentialité</a>
+            <p>&copy; X0 Media 2023.</p>
+        </div>
     </footer>
 </body>
 </html>
