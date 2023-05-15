@@ -193,13 +193,14 @@
 @media(max-width:450px){
     /*--- header - start ---*/
     #banner img{
-        width: 80%;
+        width: 100%;
     }
     /*--- header - end ---*/
 
     /*--- justification - start ---*/
     #justification_cards{
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
     }
     /*--- justification - end ---*/
 
@@ -208,15 +209,15 @@
         text-align: center;
     }
     #projects{
-        grid-template-columns: repeat(1, 360px);
+        grid-template-columns: repeat(1, 340px);
     }
     .project{
-        width: 360px;
-        height: 360px;
+        width: 340px;
+        height: 340px;
     }
     .project_content{
-        width: 310px;
-        height: 310px;
+        width: 290px;
+        height: 290px;
         margin-top: -360px;
     }
     /*--- portfolio - end ---*/

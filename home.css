@@ -95,13 +95,12 @@
 }
 #services_holder{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 70%;
 }
 .service{
     width: 400px;
     height: 400px;
-    margin: 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,10 +194,16 @@
         margin-right: 30px;
     }
     /*--- who are we & our mission - end ---*/
+
+    /*--- services - start ---*/
+    #services_holder{
+        width: 100%;
+    }
+    /*--- services - end ---*/
     
     /*--- flexing - start ---*/
     #flexing{
-        padding: 5vh 5vw;
+        padding: 5vh 10vw;
     }
     /*--- flexing - end ---*/
 }
@@ -260,7 +265,7 @@
 @media(max-width:450px){
     /*--- banner start ---*/
     #banner_content img{
-        width: 80%;
+        width: 75%;
     }
     #banner_content h1{
         width: 80%;
@@ -269,13 +274,18 @@
 
     /*--- who are we & our mission - start ---*/
     #who_are_we img, #our_mission img{
-        width: 80%;
+        width: 100%;
+        margin-bottom: 25px;
     }
     /*--- who are we & our mission - end ---*/
 
     /*--- flexing - start ---*/
+    #flexing{
+        padding: 12.5vh 7.5vw;
+    }
     #numbers{
         grid-template-columns: repeat(1, 1fr);    
+        grid-gap: 20px;
     }
     #brands{
         grid-template-columns: repeat(2, 1fr);
@@ -285,15 +295,16 @@
     /*--- services - start ---*/
     #services_holder{
         flex-direction: column;
+        align-items: center;
     }
     .service{
-        width: 360px;
-        height: 360px;
+        width: 340px;
+        height: 340px;
         margin: 5px 0;
     }
     .service_text_holder{
-        margin-top: -360px;
-        padding-top: 280px;
+        margin-top: -340px;
+        padding-top: 250px;
     }
     /*--- services - end ---*/
 

@@ -107,4 +107,7 @@ section hr{
     form{
         width: 95%;
     }
+    section hr{
+        width: 95%;
+    }
 }

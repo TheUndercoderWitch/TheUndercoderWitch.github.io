@@ -96,7 +96,7 @@ footer{
     padding: 5vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 #footer_logo img{
@@ -120,7 +120,7 @@ footer{
 }
 #footer_sitemap a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
 }
 
@@ -161,7 +161,7 @@ footer{
 }
 #footer_text_pages a, #footer_text_pages p{
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     margin: 15px 0 0;
     text-align: center;
 }
@@ -187,6 +187,14 @@ footer{
         height: 55px;
     }
     /*--- nav end ---*/
+
+    /*--- footer start ---*/
+    footer{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 10px;
+    }
+    /*--- footer end ---*/
 }
 
 /*regular tablets styling*/
@@ -206,14 +214,6 @@ footer{
         min-height: 50vh;
     }
     /*--- general start ---*/ 
-
-    /*--- footer start ---*/
-    footer{
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 50px;
-        column-gap: 10px;
-    }
-    /*--- footer end ---*/
 }
 
 /*phone styling*/
@@ -222,15 +222,24 @@ footer{
     h1{
         font-size: 50px;
     }
+    section{
+        padding: 12.5vh 7.5vw;
+    }
     /*--- general start ---*/
 
     /*--- nav start ---*/
+    nav{
+        padding: 15px 5vw;
+    }
+    nav img{
+        height: 45px;
+    }
     #nav_links{
         display: none;
     }
     #nav_btn{
         display: block;
-        font-size: 75px;
+        font-size: 70px;
         line-height: 45px;
         margin: 0;
     }

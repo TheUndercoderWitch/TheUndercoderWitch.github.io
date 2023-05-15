@@ -70,7 +70,8 @@
 /*phone styling*/
 @media(max-width:450px){
     .service img{
-        width: 80%;
+        width: 100%;
+        margin-bottom: 25px;
     }
     .service_text{
         width: 100%;
