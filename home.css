@@ -32,7 +32,11 @@
 }
 #who_are_we img, #our_mission img{
     width: 400px;
+    height: auto;
     margin-right: 50px;
+}
+#our_mission img{
+    aspect-ratio: 1/1;
 }
 #who_are_we img{
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
@@ -191,6 +195,7 @@
     /*--- who are we & our mission - start ---*/
     #who_are_we img, #our_mission img{
         width: 375px;
+        height: auto;
         margin-right: 30px;
     }
     /*--- who are we & our mission - end ---*/

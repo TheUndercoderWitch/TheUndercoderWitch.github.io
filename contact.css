@@ -5,6 +5,8 @@ section{
 
 section img{
     width: 500px;
+    height: 500px;
+    aspect-ratio: 1/1;
 }
 
 #contact_content{
@@ -92,9 +94,14 @@ section hr{
     }
     section img{
         width: 75%;
+        height: auto;
+        aspect-ratio: 1/1;
         margin-bottom: 50px;
     }
     form{
+        width: 75%;
+    }
+    section hr{
         width: 75%;
     }
 }

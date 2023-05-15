@@ -31,7 +31,7 @@
 #staff_members{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 50px;
     width: 100%;
 }
 .staff_member{
@@ -78,6 +78,15 @@
         margin-right: 30px;
     }
     /*--- who are we & our mission - end ---*/
+    
+    /*--- staff - start ---*/
+    #staff_members{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        width: 100%;
+    }
+    /*--- staff - end ---*/
 }
 
 /*regular tablets styling*/

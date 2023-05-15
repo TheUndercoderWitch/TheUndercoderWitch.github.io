@@ -5,6 +5,8 @@
 .service img{
     margin-right: 50px;
     width: 450px;
+    height: 450px;
+    aspect-ratio: 1/1;
 }
 .service p{
     font-size: 30px;
@@ -35,6 +37,8 @@
         margin-right: 0;
         margin-bottom: 50px;
         width: 75%;
+        height: auto;
+        aspect-ratio: 1/1;
     }
     .service_text{
         width: 75%;

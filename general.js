@@ -30,21 +30,25 @@ window.addEventListener("scroll", () =>{
         }
     }
 
-    if(window.scrollY > 50){
-        scrollDownBtn.style.opacity = "0";
-        scrollDownBtn.style.pointerEvents = "none";
-    }
-    else{
-        scrollDownBtn.style.opacity = "1"
-        scrollDownBtn.style.pointerEvents = "auto";
+    if(scrollDownBtn != null){
+        if(window.scrollY > 50){
+            scrollDownBtn.style.opacity = "0";
+            scrollDownBtn.style.pointerEvents = "none";
+        }
+        else{
+            scrollDownBtn.style.opacity = "1"
+            scrollDownBtn.style.pointerEvents = "auto";
+        }
     }
 })
-scrollDownBtn.addEventListener("click", () =>{
-    window.scrollTo({
-        top: 650,
-        behavior : "smooth"
-    });
-})
+if(scrollDownBtn != null){
+    scrollDownBtn.addEventListener("click", () =>{
+        window.scrollTo({
+            top: 650,
+            behavior : "smooth"
+        });
+    })
+}
 
 navButton.addEventListener("click", () =>{
     if(mobileNavOn){
