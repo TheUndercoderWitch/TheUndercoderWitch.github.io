@@ -184,7 +184,7 @@
 @media(max-width:1079px){
     /*--- banner start ---*/
     #banner{
-        height: 90vh;
+        height: 66.66666vh;
     }
     /*--- banner end ---*/
     
@@ -197,13 +197,16 @@
 
     /*--- services - start ---*/
     #services_holder{
-        width: 100%;
+        width: 95%;
     }
     /*--- services - end ---*/
     
     /*--- flexing - start ---*/
     #flexing{
         padding: 5vh 10vw;
+    }
+    #numbers, #brands{
+        grid-gap: 10px;
     }
     /*--- flexing - end ---*/
 }
@@ -212,7 +215,7 @@
 @media(max-width:850px){
     /*--- banner start ---*/
     #banner{
-        height: 100vh;
+        height: 66.66666vh;
     }
     #banner_content img{
         width: 600px;
@@ -238,16 +241,16 @@
     
     /*--- services - start ---*/
     .service{
-        width: 350px;
-        height: 350px;
+        width: 335px;
+        height: 335px;
     }
     .service_text_holder{
-        margin-top: -350px;
-        padding-top: 275px;
+        margin-top: -335px;
+        padding-top: 250px;
     }
     .service_text{
-        width: 310px;
-        height: 310px;
+        width: 295px;
+        height: 295px;
         padding: 20px;
     }
     /*--- services - end ---*/
