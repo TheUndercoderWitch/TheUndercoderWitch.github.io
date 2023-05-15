@@ -201,6 +201,13 @@
     #justification_cards{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
+        justify-content: center;
+    }
+    .justification_card{
+        padding: 12.5px;
+    }
+    .justification_card p{
+        font-size: 25px;
     }
     /*--- justification - end ---*/
 
@@ -209,16 +216,17 @@
         text-align: center;
     }
     #projects{
-        grid-template-columns: repeat(1, 340px);
+        grid-template-columns: repeat(1, 320px);
     }
     .project{
-        width: 340px;
-        height: 340px;
+        width: 320px;
+        height: 320px;
     }
     .project_content{
-        width: 290px;
-        height: 290px;
-        margin-top: -360px;
+        width: 270px;
+        height: 270px;
+        padding: 25px;
+        margin-top: -px;
     }
     /*--- portfolio - end ---*/
 

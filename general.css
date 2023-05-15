@@ -36,6 +36,26 @@ h4{
 }
 /*--- general start ---*/
 
+#scroll_down_btn{
+    position: fixed;
+    z-index: 98;
+    height: 7.5vh;
+    width: 7.5vh;
+    border-radius: 1000px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+#scroll_down_btn i{
+    font-size: 4vh;
+}
+
 /*--- nav start ---*/
 nav{
     display: flex;
@@ -187,6 +207,9 @@ footer{
     nav img{
         height: 55px;
     }
+    #scroll_down_btn{
+        display: none;
+    }
     /*--- nav end ---*/
 
     /*--- footer start ---*/
@@ -264,6 +287,9 @@ footer{
         margin-left: 20px;
         transition: 0.5s;
         color: black;
+    }
+    #scroll_down_btn{
+        display: flex;
     }
     /*--- nav end ---*/
 

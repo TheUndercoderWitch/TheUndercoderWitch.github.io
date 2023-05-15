@@ -4,6 +4,7 @@ const scrollAffectedNav = document.getElementById("scroll_affected_nav");
 const scrollUnaffectedNav = document.getElementById("scroll_unaffected_nav");
 const mobileNavLinks = document.getElementById("mobile_nav_links");
 const navButton = document.getElementById("nav_btn");
+const scrollDownBtn = document.getElementById("scroll_down_btn");
 /*--- nav variables start ---*/
 
 /*--- nav code start ---*/
@@ -28,6 +29,21 @@ window.addEventListener("scroll", () =>{
             scrollUnaffectedNav.classList.add("unscrolled_nav");   
         }
     }
+
+    if(window.scrollY > 50){
+        scrollDownBtn.style.opacity = "0";
+        scrollDownBtn.style.pointerEvents = "none";
+    }
+    else{
+        scrollDownBtn.style.opacity = "1"
+        scrollDownBtn.style.pointerEvents = "auto";
+    }
+})
+scrollDownBtn.addEventListener("click", () =>{
+    window.scrollTo({
+        top: 650,
+        behavior : "smooth"
+    });
 })
 
 navButton.addEventListener("click", () =>{
