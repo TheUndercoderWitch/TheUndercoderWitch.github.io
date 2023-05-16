@@ -71,6 +71,16 @@
     }
 }
 
+/*small tablets styling*/
+@media(max-width:725px){
+    .service img{
+        width: 85%;
+    }
+    .service_text{
+        width: 85%;
+    }
+}
+
 /*phone styling*/
 @media(max-width:450px){
     .service img{

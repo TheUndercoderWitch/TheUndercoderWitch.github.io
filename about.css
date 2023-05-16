@@ -118,6 +118,16 @@
     /*--- who are we & our mission - end ---*/
 }
 
+/*small tablets styling*/
+@media(max-width:725px){
+    /*--- staff - start ---*/
+    #staff_members{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    /*--- staff - end ---*/
+}
+
 /*phone styling*/
 @media(max-width:450px){
     /*--- who are we & our mission - start ---*/

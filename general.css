@@ -240,17 +240,8 @@ footer{
     /*--- general start ---*/ 
 }
 
-/*phone styling*/
-@media(max-width:450px){
-    /*--- general start ---*/
-    h1{
-        font-size: 50px;
-    }
-    section{
-        padding: 12.5vh 7.5vw;
-    }
-    /*--- general start ---*/
-
+/*small tablets styling*/
+@media(max-width:725px){
     /*--- nav start ---*/
     nav{
         padding: 15px 5vw;
@@ -284,14 +275,26 @@ footer{
     #mobile_nav_links a{
         text-decoration: none;
         font-size: 30px;
-        margin-left: 20px;
+        margin: 5px 0;
         transition: 0.5s;
         color: black;
     }
     #scroll_down_btn{
         display: flex;
     }
-    /*--- nav end ---*/
+    /*--- nav end ---*/    
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- general start ---*/
+    h1{
+        font-size: 50px;
+    }
+    section{
+        padding: 12.5vh 7.5vw;
+    }
+    /*--- general start ---*/
 
     /*--- footer start ---*/
     footer{

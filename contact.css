@@ -106,6 +106,19 @@ section hr{
     }
 }
 
+/*small tablets styling*/
+@media(max-width:725px){
+    section img{
+        width: 85%;
+    }
+    form{
+        width: 85%;
+    }
+    section hr{
+        width: 85%;
+    }
+}
+
 /*phone styling*/
 @media(max-width:450px){
     section img{

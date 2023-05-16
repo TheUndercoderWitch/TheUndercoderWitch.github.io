@@ -120,6 +120,7 @@
     margin-top: -400px;
     padding-top: 315px;
     width: inherit;
+    height: inherit;
     overflow: 0;
     transition: 0.5s;
     opacity: 0.5;
@@ -129,9 +130,8 @@
     opacity: 1;
 }
 .service_text{
-    width: 350px;
-    height: 350px;
-    padding: 25px;
+    width: inherit;
+    height: inherit;
     background-color: rgb(32, 32, 32);
     display: flex;
     flex-direction: column;
@@ -141,11 +141,15 @@
 .service h3{
     line-height: 40px;
     height: 80px;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
 }
 .service_text p{
     font-size: 30px;
     text-align: justify;
     margin: 0;
+    width: 80%;
 }
 /*--- services - end ---*/
 
@@ -251,12 +255,7 @@
     }
     .service_text_holder{
         margin-top: -335px;
-        padding-top: 250px;
-    }
-    .service_text{
-        width: 295px;
-        height: 295px;
-        padding: 20px;
+        padding-top: 225px;
     }
     /*--- services - end ---*/
     
@@ -269,8 +268,8 @@
     /*--- customer appreciation - end ---*/
 }
 
-/*phone styling*/
-@media(max-width:450px){
+/*small tablets styling*/
+@media(max-width:725px){
     /*--- banner start ---*/
     #banner{
         height: 100vh;
@@ -282,6 +281,34 @@
         width: 80%;
     }
     /*--- banner end ---*/
+
+    /*--- services - start ---*/
+    #services_holder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .service{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 25px;
+    }
+    .service_text_holder{
+        margin-top: -400px;
+        padding-top: 315px;
+    }
+    /*--- services - end ---*/
+
+    /*--- customer appreciation - start ---*/
+    #customer_appreciation h2{
+        text-align: center;
+    }
+    /*--- customer appreciation - end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
 
     /*--- who are we & our mission - start ---*/
     #who_are_we img, #our_mission img{
@@ -328,9 +355,6 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;
-    }
-    #customer_appreciation h2{
-        text-align: center;
     }
     /*--- customer appreciation - end ---*/
 }

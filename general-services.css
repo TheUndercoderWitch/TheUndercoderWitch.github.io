@@ -63,7 +63,6 @@
     grid-gap: 5px;
 }
 .project{
-    width: 100%;
     text-decoration: none;
     display: flex;
     flex-direction: column;
