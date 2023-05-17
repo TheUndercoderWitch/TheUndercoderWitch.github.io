@@ -118,18 +118,7 @@ footer{
 /*--- footer - end ---*/
 
 /*big tablet styling*/
-@media(max-width:1079px){
-    /*--- general - start ---*/
-    .top_section{
-        padding: 10vh 5vw 5vh;
-    }
-    .middle_section{
-        padding: 5vh 5vw;
-    }
-    .bottom_section{
-        padding: 5vh 5vw 10vh;
-    }
-    /*--- general - end ---*/
+@media(max-width:1079px){    
 }
 
 /*regular tablet styling*/

@@ -429,8 +429,8 @@
         aspect-ratio: 2/3;
     }
     #contact_picture img{
-        width: 600px;
-        height: 600px;
+        width: 700px;
+        height: 700px;
         transform: scale(175%);
     }
     #contact_text{
