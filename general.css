@@ -1,16 +1,4 @@
-/*--- general start ---*/
-body{
-    margin: 0;
-    background-color: rgb(252, 252, 252);
-}
-main{
-    min-height: 75vh;
-}
-section{
-    padding: 10vh 5vw;
-    min-height: 80vh;
-}
-
+/*--- general - start ---*/
 @font-face {
     font-family: "Source sans pro";
     src: url(fonts/SourceSansPro-Regular.ttf);
@@ -18,288 +6,51 @@ section{
 *{
     font-family: "Source sans pro";
 }
-
-h1, h2, h3, h4{
-    margin: 0 0 10px;
+body{
+    margin: 0;
 }
+
 h1{
-    font-size: 60px;
+    font-size: 55px;
+    margin: 0 0 20px;
 }
 h2{
     font-size: 45px;
+    margin: 0 0 20px;
 }
 h3{
     font-size: 35px;
+    margin: 0 0 15px;
 }
 h4{
     font-size: 30px;
+    margin: 0 0 15px;
 }
-/*--- general start ---*/
-
-#scroll_down_btn{
-    position: fixed;
-    z-index: 98;
-    height: 7.5vh;
-    width: 7.5vh;
-    border-radius: 1000px;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    backdrop-filter: blur(3px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.25s;
-}
-#scroll_down_btn i{
-    font-size: 4vh;
-}
-
-/*--- nav start ---*/
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 90vw;
-    padding: 10px 5vw;
-    transition: 0.5s;
-    z-index: 100;
-}
-nav img{
-    height: 40px;
-    transition: 0.5s;
-}
-#nav_links a{
-    text-decoration: none;
+h5{
     font-size: 25px;
-    margin-left: 20px;
-    transition: 0.5s;
-}
-#nav_btn{
-    display: none;
-}
-#mobile_nav_links{
-    display: none;
-}
-#scroll_affected_nav.unscrolled_nav a{
-    color: white;
-    text-shadow: 0 0 10px black;
-}
-#scroll_affected_nav.scrolled_nav a{
-    color: black;
-}
-#scroll_unaffected_nav a{
-    color: black;
-}
-.current_nav_page{
-    font-weight: bold;
-}
-.unscrolled_nav img{
-    opacity: 0;
-}
-.scrolled_nav img{
-    opacity: 1;
-}
-.scrolled_nav{
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-}
-#scroll_unaffected_nav img{
-    opacity: 1;
-}
-/*--- nav end ---*/
-
-/*--- footer start ---*/
-footer{
-    background-color: black;
-    padding: 5vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    margin: 0 0 5px;
 }
 
-#footer_logo img{
-    width: 100%;
+.top_section{
+    padding: 15vh 5vw 7.5vh;
 }
-#footer_logo h2{
-    color: white;
-    text-align: center;
+.middle_section{
+    padding: 7.5vh 5vw;
 }
-.footer_section{
+.bottom_section{
+    padding: 7.5vh 5vw 15vh;
+}
+/*--- general - end ---*/
+
+/*--- header - start ---*/
+header{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: end;
+    padding: 0px 5vw;
+    height: 10vh;
 }
-
-#footer_sitemap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#footer_sitemap a{
-    text-decoration: none;
+header i{
     font-size: 30px;
-    color: white;
 }
-
-.footer_social{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    transition: 0.25s;
-    width: 100%;
-}
-.footer_social:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
-}
-.footer_social i{
-    font-size: 30px;
-    margin-right: 10px;
-}
-.footer_social p{
-    font-size: 25px;
-    margin: 0;
-}
-.current_footer_page{
-    font-weight: bold;
-}
-
-#footer_text_pages{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#footer_text_pages a, #footer_text_pages p{
-    color: white;
-    font-size: 30px;
-    margin: 15px 0 0;
-    text-align: center;
-}
-/*--- footer end ---*/
-
-/*big tablets styling*/
-@media(max-width:1079px){
-    /*--- general start ---*/
-    main{
-        min-height: 50vh;
-    }
-    section{
-        padding: 10vh 7.5vw;
-        min-height: 45vh;
-    }
-    /*--- general start ---*/  
-
-    /*--- nav start ---*/
-    nav{
-        padding: 25px 5vw;
-    }
-    nav img{
-        height: 55px;
-    }
-    #scroll_down_btn{
-        display: none;
-    }
-    /*--- nav end ---*/
-
-    /*--- footer start ---*/
-    footer{
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 50px;
-        column-gap: 10px;
-    }
-    /*--- footer end ---*/
-}
-
-/*regular tablets styling*/
-@media(max-width:850px){
-    /*--- nav start ---*/
-    nav{
-        padding: 20px 5vw;
-    }
-    nav img{
-        height: 50px;
-    }
-    /*--- nav end ---*/
-
-    /*--- general start ---*/
-    section{
-        padding: 10vh 5vw;
-        min-height: 50vh;
-    }
-    /*--- general start ---*/ 
-}
-
-/*small tablets styling*/
-@media(max-width:725px){
-    /*--- nav start ---*/
-    nav{
-        padding: 15px 5vw;
-    }
-    nav img{
-        height: 45px;
-    }
-    #nav_links{
-        display: none;
-    }
-    #nav_btn{
-        display: block;
-        font-size: 70px;
-        line-height: 45px;
-        margin: 0;
-    }
-    #mobile_nav_links{
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(225, 225, 225);
-        z-index: 99;
-        transition: 0.5s;
-        opacity: 0;
-        pointer-events: none;
-    }
-    #mobile_nav_links a{
-        text-decoration: none;
-        font-size: 30px;
-        margin: 5px 0;
-        transition: 0.5s;
-        color: black;
-    }
-    #scroll_down_btn{
-        display: flex;
-    }
-    /*--- nav end ---*/    
-}
-
-/*phone styling*/
-@media(max-width:450px){
-    /*--- general start ---*/
-    h1{
-        font-size: 50px;
-    }
-    section{
-        padding: 12.5vh 7.5vw;
-    }
-    /*--- general start ---*/
-
-    /*--- footer start ---*/
-    footer{
-        padding: 7.5vw;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    /*--- footer end ---*/
-}
+/*--- header - end ---*/

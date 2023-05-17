@@ -1,94 +1,98 @@
-/*--- banner start ---*/
+/*--- banner - start ---*/
 #banner{
-    height: 100vh;
-    width: 100%;
-    background-size: 100%;
-    background: url(pictures/illustrations/home_banner.webp) center center;
+    padding: 0vh 5vw 5vh;
 }
 #banner_content{
-    height: inherit;
-    width: inherit;
-    background-color: rgba(0, 0, 0, 0.25);
+    aspect-ratio: 19/9;
+    width: 100%;
+    border-radius: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    overflow: hidden;
+}
+#banner_picture{
+    position: relative;
+    width: 100vw;
+    filter: grayscale(40%);
+}
+#banner_text{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
 }
-#banner_content img{
-    width: 700px;
+#banner_text img{
+    width: 100%;
     filter: drop-shadow(0 0 10px black);
 }
-#banner_content h1{
-    filter: drop-shadow(0 0 10px black);
+#banner_text h1{
+    color: white;
+    text-shadow: 0 0 10px black;
 }
-/*--- banner end ---*/
+/*--- banner - end ---*/
 
-/*--- who are we & our mission - start ---*/
-#who_are_we, #our_mission{
+/*--- who are we - start ---*/
+#who_are_we{
     display: flex;
     align-items: center;
 }
-#who_are_we img, #our_mission img{
-    width: 400px;
-    height: auto;
-    margin-right: 50px;
-}
-#our_mission img{
+#who_are_we_picture{
+    height: 450px;
+    width: 450px;
     aspect-ratio: 1/1;
+    margin-right: 50px;
+    background-color: rgb(64, 64, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#who_are_we img{
+#who_are_we_picture img{
+    width: 80%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
-#who_are_we p, #our_mission p{
+#who_are_we_text p{
+    font-size: 30px;
+    text-align: justify;
+    width: fit-content;
+}
+/*--- who are we - end ---*/
+
+/*--- our mission - start ---*/
+#our_mission_content{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: rgb(64, 64, 64);
+}
+#our_mission_picture{
+    aspect-ratio: 1/1;
+    width: 45%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#our_mission_picture img{
+    width: 700px;
+    height: 700px;
+    transform: scale(125%);
+    aspect-ratio: 1/1;
+    position: relative;
+}
+#our_mission_text{
+    color: white;
+    width: 55%;
+    padding: 50px;
+}
+#our_mission_text p{
     font-size: 30px;
     text-align: justify;
 }
-/*--- who are we & our mission - end ---*/
-
-/*--- flexing - start ---*/
-#flexing{
-    padding: 10vh 5vw;
-}
-#numbers, #brands{
-    width: 100%;
-    display: grid;
-    grid-gap: 50px;
-}
-#numbers{
-    grid-template-columns: repeat(3, 1fr);    
-}
-#brands{
-    grid-template-columns: repeat(4, 1fr);
-}
-.number{
-    aspect-ratio: 3/2;
-    background-color: rgb(225, 225, 225);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-}
-.number p{
-    font-size: 30px;
-    margin: 0;
-}
-#numbers{
-    margin-bottom: 50px;
-}
-#brands img{
-    width: 100%;
-    filter: grayscale(100%);
-    transition: 0.25s;
-}
-#brands img:hover{
-    filter: grayscale(0%);
-}
-/*--- flexing - end ---*/
+/*--- our mission - end ---*/
 
 /*--- services - start ---*/
 #services{
@@ -98,70 +102,95 @@
     align-items: center;
 }
 #services_holder{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 400px);
+    grid-gap: 30px;
+    justify-content: center;
 }
 .service{
     width: 400px;
     height: 400px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow: hidden;
     text-decoration: none;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .service img{
     width: inherit;
     height: inherit;
-    background-color: black;
 }
 .service_text_holder{
-    margin-top: -400px;
-    padding-top: 315px;
     width: inherit;
     height: inherit;
-    overflow: 0;
-    transition: 0.5s;
+    margin-top: -400px;
+    padding-top: 300px;
     opacity: 0.5;
+    transition: 0.5s;
 }
 .service_text_holder:hover{
-    padding-top: 0;
+    padding-top: 0px;
     opacity: 1;
 }
 .service_text{
     width: inherit;
     height: inherit;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(64, 64, 64);
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
 }
-.service h3{
-    line-height: 40px;
-    height: 80px;
-    width: 80%;
-    text-align: center;
+.service_text h3{
     margin-top: 30px;
 }
 .service_text p{
     font-size: 30px;
-    text-align: justify;
     margin: 0;
+    text-align: justify;
     width: 80%;
 }
 /*--- services - end ---*/
 
-/*--- customer appreciation - start ---*/
-#customer_appreciation{
+/*--- flexing - start ---*/
+#flexing_content{
+    min-height: 20vh;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 50px;
+    background-color: rgb(200, 200, 200);
 }
-#comments_holder{
+#flexing_content h2{
+    text-align: center;
+}
+#brands{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 75px;
     width: 100%;
+}
+#brands img{
+    width: 100%;
+    transform: scale(75%);
+    filter: grayscale(100%);
+    transition: 0.25s;
+}
+#brands img:hover{
+    filter: grayscale(0%);
+    transform: scale(80%);
+}
+/*--- flexing - end ---*/
+
+/*--- customer comments - start ---*/
+#customer_comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #comments{
     display: grid;
@@ -169,192 +198,172 @@
     grid-gap: 15px;
 }
 .comment{
-    aspect-ratio: 1/1;
-    background-color: black;
-    padding: 20px;
-    color: white;
+    background-color: rgb(225, 225, 225);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .comment_header{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comment_header img{
+    height: 85px;
+    width: 85px;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+    background-color: black;
+    border-radius: 1000px;
 }
 .comment_header p{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
 }
 .comment_content{
     font-size: 25px;
     text-align: justify;
+    margin: 15px 0 0;
+}
+/*--- customer comments - end ---*/
+
+/*--- staff - start ---*/
+#staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#staff_members{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 100%;
+}
+.staff_member{
+    aspect-ratio: 21/30;
+    padding: 25px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: 0.25s;
+}
+.staff_member:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.staff_member img{
+    width: 60%;
+    border-radius: 1000px;
+    margin-bottom: 25px;
+}
+.staff_member p{
+    font-size: 30px;
     margin: 0;
 }
-/*--- customer appreciation - end ---*/
+/*--- staff - end ---*/
 
-/*big tablets styling*/
-@media(max-width:1079px){
-    /*--- banner start ---*/
-    #banner{
-        height: 66.66666vh;
-    }
-    /*--- banner end ---*/
-    
-    /*--- who are we & our mission - start ---*/
-    #who_are_we img, #our_mission img{
-        width: 375px;
-        height: auto;
-        margin-right: 30px;
-    }
-    /*--- who are we & our mission - end ---*/
-
-    /*--- services - start ---*/
-    #services_holder{
-        width: 95%;
-    }
-    /*--- services - end ---*/
-    
-    /*--- flexing - start ---*/
-    #flexing{
-        padding: 5vh 10vw;
-    }
-    #numbers, #brands{
-        grid-gap: 10px;
-    }
-    /*--- flexing - end ---*/
+/*--- contact - start ---*/
+#contact_content{
+    background-color: rgb(64, 64, 64);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
-
-/*regular tablets styling*/
-@media(max-width:850px){
-    /*--- banner start ---*/
-    #banner{
-        height: 66.66666vh;
-    }
-    #banner_content img{
-        width: 600px;
-    }
-    #banner_content h1{
-        width: 600px;
-        text-align: center;
-    }
-    /*--- banner end ---*/
-    
-    /*--- who are we & our mission - start ---*/
-    #who_are_we, #our_mission{
-        flex-direction: column;
-    }
-    #who_are_we img, #our_mission img{
-        width: 65%;
-        margin: 0 0 50px;
-    }
-    #who_are_we h2, #our_mission h2{
-        text-align: center;
-    }
-    /*--- who are we & our mission - end ---*/
-    
-    /*--- services - start ---*/
-    .service{
-        width: 335px;
-        height: 335px;
-    }
-    .service_text_holder{
-        margin-top: -335px;
-        padding-top: 225px;
-    }
-    /*--- services - end ---*/
-    
-    /*--- customer appreciation - start ---*/
-    #comments{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-    }
-    /*--- customer appreciation - end ---*/
+#contact_picture{
+    overflow: hidden;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
 }
-
-/*small tablets styling*/
-@media(max-width:725px){
-    /*--- banner start ---*/
-    #banner{
-        height: 100vh;
-    }
-    #banner_content img{
-        width: 75%;
-    }
-    #banner_content h1{
-        width: 80%;
-    }
-    /*--- banner end ---*/
-
-    /*--- services - start ---*/
-    #services_holder{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .service{
-        width: 400px;
-        height: 400px;
-        margin-bottom: 25px;
-    }
-    .service_text_holder{
-        margin-top: -400px;
-        padding-top: 315px;
-    }
-    /*--- services - end ---*/
-
-    /*--- customer appreciation - start ---*/
-    #customer_appreciation h2{
-        text-align: center;
-    }
-    /*--- customer appreciation - end ---*/
+#contact_picture img{
+    width: 550px;
+    height: 550px;
+    transform: scale(125%);
 }
-
-/*phone styling*/
-@media(max-width:450px){
-
-    /*--- who are we & our mission - start ---*/
-    #who_are_we img, #our_mission img{
-        width: 100%;
-        margin-bottom: 25px;
-    }
-    /*--- who are we & our mission - end ---*/
-
-    /*--- flexing - start ---*/
-    #flexing{
-        padding: 12.5vh 7.5vw;
-    }
-    #numbers{
-        grid-template-columns: repeat(1, 1fr);    
-        grid-gap: 20px;
-    }
-    #brands{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    /*--- flexing - end ---*/
-
-    /*--- services - start ---*/
-    #services_holder{
-        flex-direction: column;
-        align-items: center;
-    }
-    .service{
-        width: 340px;
-        height: 340px;
-        margin: 5px 0;
-    }
-    .service_text_holder{
-        margin-top: -340px;
-        padding-top: 250px;
-    }
-    .service_text{
-        width: 300px;
-        height: 300px;
-    }
-    /*--- services - end ---*/
-
-    /*--- customer appreciation - start ---*/
-    #comments{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 15px;
-    }
-    /*--- customer appreciation - end ---*/
+#contact_text{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
+#contacts_holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacts_holder form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacts_holder form input, #contacts_holder form textarea{
+    width: 400px;
+    border: 0;
+    padding: 5px;
+    min-height: 25px;
+    margin: 0 0 5px;
+    border-radius: 5px;
+    font-size: 17.5px;
+}
+#contacts_holder form button{
+    width: 100%;
+    font-size: 25px;
+    border: 0;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: 0.25s;
+}
+#contacts_holder form button:hover{
+    background-color: rgb(225, 225, 225);
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#contacts_holder hr{
+    height: 420px;
+    margin: 0 15px;
+    width: 3px;
+    border: 0;
+    background-color: white;
+    border-radius: 1000px;
+}
+#socials{
+    display: flex;
+    flex-direction: column;
+}
+#socials a{
+    aspect-ratio: 1/1;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    margin: 7.5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+#socials a:hover{
+    background-color: white;
+    color: black;
+}
+#socials i{
+    font-size: 30px;
+}
+/*--- contact - end ---*/
