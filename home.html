@@ -8,18 +8,20 @@
     <!-- local css -->
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="scroll_animations.css">
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- local javascript -->
     <script defer src="home.js"></script>
+    <script defer src="scroll_animations.js"></script>
     
     <link rel="shortcut icon" href="pictures/branding/favicon.webp" type="image/x-icon">
     <title>X0 Media</title>
 </head>
 <body>
     <header><i class="fa-solid fa-gear"></i></header>
-    
+
     <section id="banner">
         <div id="banner_content">
             <img src="pictures/illustrations/home_banner.webp" alt="" id="banner_picture">
@@ -31,10 +33,10 @@
     </section>
 
     <section id="who_are_we" class="top_section">
-        <div id="who_are_we_picture">
+        <div id="who_are_we_picture" class="slide_right">
             <img src="pictures/branding/X0 logo white.webp" alt="">
         </div>
-        <div id="who_are_we_text">
+        <div id="who_are_we_text" class="slide_right">
             <h2>Qu'est-ce qu'X0 Media ?</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla a rerum illum ipsum ab illo molestiae dolore error quae, molestias alias officiis recusandae deleniti eos inventore doloremque harum perferendis.
@@ -42,8 +44,8 @@
         </div>
     </section>
 
-    <section id="our_mission" class="middle_section">
-        <div id="our_mission_content">
+    <section id="our_mission" class="middle_section" >
+        <div id="our_mission_content"class="slide_up">
             <div id="our_mission_picture">
                 <img src="pictures/illustrations/mission.webp" alt="" id="mission_img">
             </div>
@@ -58,8 +60,8 @@
 
     <section id="services" class="middle_section">
         <h2>Our services</h2>
-        <div id="services_holder">
-            <a href="" class="service">
+        <div id="services_holder" class="slide_up">
+            <a href="service-sma.html" class="service">
                 <img src="pictures/illustrations/social_media_advertising.webp" alt="">
                 <div class="service_text_holder">
                     <div class="service_text">
@@ -68,7 +70,7 @@
                     </div>
                 </div>
             </a>
-            <a href="" class="service">
+            <a href="service-sma.html" class="service">
                 <img src="pictures/illustrations/social_media_advertising.webp" alt="">
                 <div class="service_text_holder">
                     <div class="service_text">
@@ -81,7 +83,7 @@
     </section>
 
     <section id="flexing" class="middle_section">
-        <div id="flexing_content">
+        <div id="flexing_content" class="slide_up">
             <h2>Les marques qui nous font confiance</h2>
     
             <div id="brands">
@@ -98,7 +100,7 @@
     <section id="customer_comments" class="middle_section">
         <h2>Appréciations des clients</h2>
 
-        <div id="comments">
+        <div id="comments" class="slide_up">
             <div class="comment">
                 <div class="comment_header">
                     <img src="" alt="">
@@ -141,7 +143,7 @@
     <section id="staff" class="middle_section">
         <h2>Notre équipe</h2>
 
-        <div id="staff_members">
+        <div id="staff_members" class="slide_up">
             <a href="" class="staff_member">
                 <img src="pictures/staff_members/govain_c_r/WhatsApp Image 2021-06-19 at 07.50.33.jpeg" alt="">
                 <h4>Govain Carlhensky Renauld</h4>
@@ -161,9 +163,9 @@
     </section>
 
     <section id="contact" class="bottom_section">
-        <div id="contact_content">
+        <div id="contact_content" class="slide_up">
             <div id="contact_picture">
-                <img src="pictures/illustrations/contact.webp" alt="">
+                <img src="pictures/illustrations/contact.webp" alt="" id="contact_img">
             </div>
             <div id="contact_text">
                 <div id="contacts_holder">
@@ -176,13 +178,43 @@
                     </form>
                     <hr>
                     <div id="socials">
-                        <a href="https://web.facebook.com/people/X0-Media/100092291661433/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/x0media.ig"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/x0media_tw"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://web.facebook.com/people/X0-Media/100092291661433/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/x0media.ig" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/x0media_tw" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_logo">
+                <a href="home.html"><img src="pictures/branding/logo with text white.webp" alt=""></a>
+                <h3>Votre partenaire de croissance.</h3>
+            </div>
+    
+            <div id="footer_socials">
+                <a href="https://web.facebook.com/people/X0-Media/100092291661433/" target="_blank" class="footer_social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p>X0 Media</p>
+                </a>
+                <a href="https://www.instagram.com/x0media.ig" target="_blank" class="footer_social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>@x0media.ig</p>
+                </a>
+                <a href="https://twitter.com/x0media_tw" target="_blank" class="footer_social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>@x0media_tw</p>
+                </a>
+            </div>
+    
+            <div id="footer_links">
+                <a href="">Police de confidentialité</a>
+                <a href="">Termes & conditions</a>
+                <p>&copy; X0 Media 2023.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

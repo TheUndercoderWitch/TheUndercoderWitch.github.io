@@ -41,6 +41,7 @@
 #who_are_we_picture{
     height: 450px;
     width: 450px;
+    border-radius: 15px;
     aspect-ratio: 1/1;
     margin-right: 50px;
     background-color: rgb(64, 64, 64);
@@ -104,13 +105,14 @@
 #services_holder{
     display: grid;
     width: 80%;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     justify-content: center;
 }
 .service{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -123,9 +125,9 @@
 }
 .service_text_holder{
     width: inherit;
-    height: inherit;
-    margin-top: -400px;
-    padding-top: 300px;
+    aspect-ratio: inherit;
+    margin-top: -100%;
+    padding-top: 80%;
     opacity: 0.5;
     transition: 0.5s;
 }
@@ -141,6 +143,7 @@
     flex-direction: column;
     align-items: center;
     color: white;
+    aspect-ratio: inherit;
 }
 .service_text h3{
     margin-top: 30px;
@@ -161,10 +164,11 @@
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(64, 64, 64);
 }
 #flexing_content h2{
     text-align: center;
+    color: white;
 }
 #brands{
     margin-top: 35px;
@@ -177,11 +181,9 @@
 #brands img{
     width: 100%;
     transform: scale(75%);
-    filter: grayscale(100%);
     transition: 0.25s;
 }
 #brands img:hover{
-    filter: grayscale(0%);
     transform: scale(80%);
 }
 /*--- flexing - end ---*/
@@ -200,7 +202,7 @@
 .comment{
     background-color: rgb(225, 225, 225);
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .comment_header{
@@ -290,6 +292,7 @@
     width: 550px;
     height: 550px;
     transform: scale(125%);
+    position: relative;
 }
 #contact_text{
     padding: 50px;
@@ -359,11 +362,282 @@
     color: white;
     transition: 0.25s;
 }
-#socials a:hover{
-    background-color: white;
-    color: black;
-}
 #socials i{
     font-size: 30px;
 }
 /*--- contact - end ---*/
+
+/*big tablet styling*/
+@media(max-width:1079px){
+    /*--- banner - start ---*/
+    #banner_content{
+        aspect-ratio: 3/2;
+    }
+    /*--- banner - end ---*/
+
+    /*--- our mission - start ---*/
+    #our_mission_picture{
+        aspect-ratio: 2/3;
+        width: 50%;
+    }
+    #our_mission_picture img{
+        transform: scale(175%);
+    }
+    #our_mission_text{
+        width: 50%;
+    }
+    /*--- our mission - end ---*/
+
+    /*--- services - start ---*/
+    #services_holder{
+        width: 100%;
+    }
+    /*--- services - end ---*/
+
+    /*--- flexing - start ---*/
+    #brands img{
+        transform: scale(85%);
+    }
+    #brands img:hover{
+        transform: scale(95%);
+    }
+    /*--- flexing - end ---*/
+
+    /*--- customer comments - start ---*/
+    #comments{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*--- customer comments - end ---*/
+
+    /*--- staff - start ---*/
+    #staff_members{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*--- staff - end ---*/
+
+    /*--- contact - start ---*/
+    #contact_content{
+        background-color: rgb(64, 64, 64);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    #contact_picture{
+        width: 50%;
+        aspect-ratio: 2/3;
+    }
+    #contact_picture img{
+        width: 600px;
+        height: 600px;
+        transform: scale(175%);
+    }
+    #contact_text{
+        width: 50%;
+    }
+    /*--- contact - end ---*/
+}
+
+/*regular tablet styling*/
+@media(max-width:850px){
+    /*--- banner - start ---*/
+    #banner_content{
+        aspect-ratio: 4/3;
+    }
+    #banner_picture{
+        width: 125vw;
+    }
+    #banner_text{
+        text-align: center;
+        width: 500px;
+    }
+    /*--- banner - end ---*/
+
+    /*--- who are we - start ---*/
+    #who_are_we{
+        flex-direction: column;
+    }
+    #who_are_we_picture{
+        height: 400px;
+        width: 400px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    #who_are_we_text h2{
+        text-align: center;
+    }
+    /*--- who are we - end ---*/
+
+    /*--- our mission - start ---*/
+    #our_mission_content{
+        flex-direction: column;
+    }
+    #our_mission_picture{
+        aspect-ratio: 3/2;
+        width: 100%;
+    }
+    #our_mission_text{
+        color: white;
+        width: auto;
+        padding: 50px;
+    }
+    /*--- our mission - end ---*/
+
+    /*--- services - start ---*/
+    #services_holder{
+        width: 75%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*--- services - end ---*/
+
+    /*--- flexing - start ---*/
+    #brands{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*--- flexing - end ---*/
+
+    /*--- customer comments - start ---*/
+    #comments{
+        grid-gap: 10px;
+    }
+    .comment{
+        padding: 15px;
+    }
+    .comment_header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .comment_header img{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    /*--- customer comments - end ---*/
+
+    /*--- staff - start ---*/
+    #staff_members{
+        grid-gap: 20px;
+    }
+    /*--- staff - end ---*/
+
+    /*--- contact - start ---*/
+    #contact_content{
+        flex-direction: column;
+        width: 100%;
+    }
+    #contact_picture{
+        width: 100%;
+        aspect-ratio: 3/2;
+    }
+    #contact_picture img{
+        width: 700px;
+        height: 700px;
+    }
+    #contacts_holder{
+        flex-direction: column;
+        width: 500px;
+    }
+    #contacts_holder form{
+        width: 100%;
+    }
+    #contacts_holder form input, #contacts_holder form textarea{
+        width: 100%;
+    }
+    #contacts_holder form button{
+        width: 100%;
+    }
+    #contacts_holder hr{
+        width: 100%;
+        height: 3px;
+        margin: 15px 0;
+    }
+    #socials{
+        display: flex;
+        flex-direction: row;
+    }
+    #socials a{
+        margin: 0 7.5px;
+    }
+    /*--- contact - end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    h2{
+        text-align: center;
+    }
+    /*--- banner - start ---*/
+    #banner_content{
+        aspect-ratio: 2/3;
+    }
+    #banner_picture{
+        width: 200vw;
+    }
+    #banner_text{
+        width: 80%;
+    }
+    /*--- banner - end ---*/
+
+    /*--- who are we - start ---*/
+    #who_are_we_picture{
+        height: 250px;
+        width: 250px;
+    }
+    /*--- who are we - end ---*/
+
+    /*--- our mission - start ---*/
+    #our_mission_content{
+        flex-direction: column;
+    }
+    #our_mission_picture{
+        aspect-ratio: 4/5;
+    }
+    #our_mission_text{
+        padding: 25px;
+    }
+    /*--- our mission - end ---*/
+
+    /*--- services - start ---*/
+    #services_holder{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*--- services - end ---*/
+
+    /*--- flexing - start ---*/
+    #brands{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    #brands img{
+        transform: scale(100%);
+    }
+    /*--- flexing - end ---*/
+
+    /*--- customer comments - start ---*/
+    #comments{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    /*--- customer comments - end ---*/
+
+    /*--- staff - start ---*/
+    #staff_members{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    /*--- staff - end ---*/
+
+    /*--- contact - start ---*/
+    #contact_content{
+        flex-direction: column;
+        width: 100%;
+    }
+    #contact_picture{
+        width: 100%;
+        aspect-ratio: 4/5;
+    }
+    #contacts_holder{
+        width: 300px;
+    }
+    /*--- contact - end ---*/
+}
