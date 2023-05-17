@@ -262,7 +262,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .staff_member img{
-    width: 60%;
+    width: 200px;
+    height: 200px;
     border-radius: 1000px;
     margin-bottom: 25px;
 }
@@ -289,8 +290,8 @@
     aspect-ratio: 1/1;
 }
 #contact_picture img{
-    width: 550px;
-    height: 550px;
+    width: 700px;
+    height: 700px;
     transform: scale(125%);
     position: relative;
 }
@@ -435,6 +436,21 @@
     #contact_text{
         width: 50%;
     }
+    #contacts_holder{
+        flex-direction: column;
+    }
+    #contacts_holder hr{
+        width: 100%;
+        height: 3px;
+        margin: 15px 0;
+    }
+    #socials{
+        display: flex;
+        flex-direction: row;
+    }
+    #socials a{
+        margin: 0 7.5px;
+    }
     /*--- contact - end ---*/
 }
 
@@ -533,7 +549,6 @@
         height: 700px;
     }
     #contacts_holder{
-        flex-direction: column;
         width: 500px;
     }
     #contacts_holder form{
@@ -545,18 +560,6 @@
     #contacts_holder form button{
         width: 100%;
     }
-    #contacts_holder hr{
-        width: 100%;
-        height: 3px;
-        margin: 15px 0;
-    }
-    #socials{
-        display: flex;
-        flex-direction: row;
-    }
-    #socials a{
-        margin: 0 7.5px;
-    }
     /*--- contact - end ---*/
 }
 
@@ -567,10 +570,10 @@
     }
     /*--- banner - start ---*/
     #banner_content{
-        aspect-ratio: 2/3;
+        aspect-ratio: 1/2;
     }
     #banner_picture{
-        width: 200vw;
+        width: 300vw;
     }
     #banner_text{
         width: 80%;
@@ -589,7 +592,10 @@
         flex-direction: column;
     }
     #our_mission_picture{
-        aspect-ratio: 4/5;
+        aspect-ratio: 1/1;
+    }
+    #our_mission_picture img{
+        transform: scale(125%);
     }
     #our_mission_text{
         padding: 25px;
@@ -604,6 +610,9 @@
     /*--- services - end ---*/
 
     /*--- flexing - start ---*/
+    #flexing_content{
+        padding: 30px;
+    }
     #brands{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
@@ -624,6 +633,8 @@
     #staff_members{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
+    }.staff_member{
+        aspect-ratio: 1/1;
     }
     /*--- staff - end ---*/
 

@@ -29,6 +29,6 @@ window.addEventListener("scroll",()=>{
 contactPictureTop = contactPicture.offsetTop;
 console.log(contactPictureTop);
 window.addEventListener("scroll",()=>{
-    contactPicture.style.top = -window.scrollY/5 + 1250 + "px";
+    contactPicture.style.top = -window.scrollY/5 + 900 + "px";
 })
 /*--- contact code - end ---*/

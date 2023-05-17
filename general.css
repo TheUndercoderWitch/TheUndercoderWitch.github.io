@@ -50,6 +50,12 @@ header{
     padding: 0px 5vw;
     height: 10vh;
 }
+header a{
+    color: black;
+    font-size: 30px;
+    margin-right: 15px;
+    text-decoration: none;
+}
 header i{
     font-size: 30px;
 }
@@ -113,11 +119,6 @@ footer{
 
 /*big tablet styling*/
 @media(max-width:1079px){
-    
-}
-
-/*regular tablet styling*/
-@media(max-width:850px){
     /*--- general - start ---*/
     .top_section{
         padding: 10vh 5vw 5vh;
@@ -129,7 +130,10 @@ footer{
         padding: 5vh 5vw 10vh;
     }
     /*--- general - end ---*/
+}
 
+/*regular tablet styling*/
+@media(max-width:850px){
     /*--- footer - start ---*/
     #footer_content{
         grid-template-columns: repeat(2, 1fr);
