@@ -24,6 +24,6 @@ window.addEventListener("scroll",()=>{
 
 /*--- contact code - start ---*/
 window.addEventListener("scroll",()=>{
-    contactPicture.style.top = window.scrollY/5 - 750 + "px";
+    contactPicture.style.top = window.scrollY/7.5 - 675 + "px";
 })
 /*--- contact code - end ---*/

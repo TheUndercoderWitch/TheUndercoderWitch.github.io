@@ -96,6 +96,12 @@ footer{
     align-items: center;
     text-decoration: none;
     color: black;
+    transition: 0.25s;
+}
+.footer_social:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .footer_social i{
     font-size: 40px;
@@ -110,6 +116,8 @@ footer{
     font-size: 30px;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 #footer_links a{
     color: white;
@@ -122,6 +130,7 @@ footer{
 
 /*regular tablet styling*/
 @media(max-width:850px){
+
     /*--- footer - start ---*/
     #footer_content{
         grid-template-columns: repeat(2, 1fr);
@@ -139,6 +148,13 @@ footer{
         font-size: 40px;
     }
     /*--- general - end ---*/
+    
+    /*--- header - start ---*/
+    header a, header p{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    /*--- header - end ---*/
 
     /*--- footer - start ---*/
     #footer_content{

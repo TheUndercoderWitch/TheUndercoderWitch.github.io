@@ -197,7 +197,7 @@
 #comments{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 30px;
 }
 .comment{
     background-color: rgb(225, 225, 225);
@@ -239,7 +239,7 @@
 #staff_members{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 30px;
     width: 100%;
 }
 .staff_member{
@@ -373,6 +373,9 @@
     /*--- banner - start ---*/
     #banner_content{
         aspect-ratio: 3/2;
+    }
+    #banner_picture{
+        width: 125vw;
     }
     /*--- banner - end ---*/
 
@@ -517,7 +520,7 @@
 
     /*--- customer comments - start ---*/
     #comments{
-        grid-gap: 10px;
+        grid-gap: 30px;
     }
     .comment{
         padding: 15px;
@@ -534,7 +537,7 @@
 
     /*--- staff - start ---*/
     #staff_members{
-        grid-gap: 20px;
+        grid-gap: 30px;
     }
     /*--- staff - end ---*/
 
@@ -643,8 +646,8 @@
     /*--- staff - start ---*/
     #staff_members{
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-    }.staff_member{
+    }
+    .staff_member{
         aspect-ratio: 1/1;
     }
     .staff_member img{
