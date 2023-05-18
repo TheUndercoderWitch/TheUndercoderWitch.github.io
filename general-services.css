@@ -4,7 +4,7 @@ h2{
 
 /*--- banner - start ---*/
 #banner{
-    padding: 0vh 5vw 5vh;
+    padding: 1vh 5vw 5vh;
     display: flex;
     align-items: center;
 }
@@ -91,7 +91,7 @@ h2{
 #projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 30px;
     width: 100%;
 }
 .project{
@@ -162,7 +162,8 @@ h2{
 /*--- contact - end ---*/
 
 /*big tablet styling*/
-@media(max-width:1079px){ /*--- banner - start ---*/
+@media(max-width:1079px){
+    /*--- banner - start ---*/
     #banner_picture{
         width: 450px;
         min-width: 450px;
@@ -224,11 +225,17 @@ h2{
         margin-bottom: 30px;
         aspect-ratio: 5/6;
     }
+    #banner_text{
+        padding: 25px;
+    }
     /*--- banner - end ---*/
 
     /*--- justification - start ---*/
     #justification_cards{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .justification_card p{
+        font-size: 25px;
     }
     /*--- justification - end ---*/  
 

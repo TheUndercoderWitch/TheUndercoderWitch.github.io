@@ -53,6 +53,12 @@
     width: 80%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
+#who_are_we_text{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
 #who_are_we_text p{
     font-size: 30px;
     text-align: justify;
@@ -86,6 +92,7 @@
 }
 #our_mission_text{
     color: black;
+    background-color: white;
     height: 100%;
     padding: 50px;
     border-radius: 30px;
@@ -166,11 +173,11 @@
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    background-color: rgb(64, 64, 64);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #flexing_content h2{
     text-align: center;
-    color: white;
 }
 #brands{
     margin-top: 35px;
@@ -202,10 +209,9 @@
     grid-gap: 30px;
 }
 .comment{
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(220, 220, 220);
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .comment_header{
     display: flex;
@@ -305,7 +311,7 @@
     align-items: center;
     background-color: white;
     border-radius: 30px;
-    height: 400px;
+    height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 100%;
 }
@@ -340,7 +346,7 @@
     transition: 0.25s;
 }
 #contacts_holder form button:hover{
-    background-color: rgb(225, 225, 225);
+    background-color: white;
     color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -385,6 +391,25 @@
         width: 125vw;
     }
     /*--- banner - end ---*/
+
+    /*--- who are we - start ---*/
+    #who_are_we{
+        flex-direction: column;
+    }
+    #who_are_we_picture{
+        aspect-ratio: 3/2;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #who_are_we_picture img{
+        width: auto;
+        height: 50%;
+    }
+    #who_are_we_text h2{
+        text-align: center;
+    }
+    /*--- who are we - end ---*/
 
     /*--- our mission - start ---*/
     #our_mission{
@@ -496,21 +521,6 @@
     }
     /*--- banner - end ---*/
 
-    /*--- who are we - start ---*/
-    #who_are_we{
-        flex-direction: column;
-    }
-    #who_are_we_picture{
-        height: 400px;
-        width: 400px;
-        margin-right: 0px;
-        margin-bottom: 50px;
-    }
-    #who_are_we_text h2{
-        text-align: center;
-    }
-    /*--- who are we - end ---*/
-
     /*--- services - start ---*/
     #services_holder{
         width: 75%;
@@ -578,8 +588,17 @@
 
     /*--- who are we - start ---*/
     #who_are_we_picture{
-        height: 250px;
-        width: 250px;
+        aspect-ratio: 5/6;
+        height: auto;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #who_are_we_picture img{
+        width: 75%;
+        height: auto;
+    }
+    #who_are_we_text{
+        padding: 25px;
     }
     /*--- who are we - end ---*/
 
@@ -587,6 +606,14 @@
     #our_mission_picture{
         aspect-ratio: 5/6;
         margin-bottom: 25px;
+    }
+    #our_mission_picture img{
+        width: 575px;
+        height: 575px;
+        transform: scale(120%);
+    }
+    #our_mission_text{
+        padding: 25px;
     }
     /*--- our mission - end ---*/
 
@@ -608,9 +635,9 @@
         padding: 50px;
     }
     #brands{
-        grid-template-columns: repeat(1, 0.85fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        grid-gap: 30px;
+        grid-gap: 50px;
     }
     #brands img{
         transform: scale(100%);
@@ -643,10 +670,12 @@
         margin-bottom: 25px;
     }
     #contact_picture img{
-        transform: scale(200%);
+        width: 500px;
+        height: 500px;
+        transform: scale(100%) translateY(-250px);
     }
     #contact_text{
-        width: 90%;
+        width: 85%;
         padding: 50px 25px;
     }
     #contacts_holder{
