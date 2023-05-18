@@ -382,7 +382,7 @@
         width: 50%;
     }
     #our_mission_picture img{
-        transform: scale(175%);
+        transform: scale(200%);
     }
     #our_mission_text{
         width: 50%;
@@ -504,6 +504,9 @@
         width: 75%;
         grid-template-columns: repeat(1, 1fr);
     }
+    .service_text_holder{
+        padding-top: 82.5%;
+    }
     /*--- services - end ---*/
 
     /*--- flexing - start ---*/
@@ -568,9 +571,10 @@
     h2{
         text-align: center;
     }
+
     /*--- banner - start ---*/
     #banner_content{
-        aspect-ratio: 1/2;
+        aspect-ratio: 105/200;
     }
     #banner_picture{
         width: 300vw;
@@ -607,14 +611,21 @@
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
+    .service_text_holder{
+        padding-top: 75%;
+    }
+    .service_text p{
+        font-size: 27.5px;
+    }
     /*--- services - end ---*/
 
     /*--- flexing - start ---*/
     #flexing_content{
-        padding: 30px;
+        padding: 50px;
     }
     #brands{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 0.85fr);
+        justify-content: center;
         grid-gap: 30px;
     }
     #brands img{
@@ -635,6 +646,10 @@
         grid-gap: 30px;
     }.staff_member{
         aspect-ratio: 1/1;
+    }
+    .staff_member img{
+        width: 150px;
+        height: 150px;
     }
     /*--- staff - end ---*/
 
