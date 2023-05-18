@@ -61,21 +61,21 @@
 /*--- who are we - end ---*/
 
 /*--- our mission - start ---*/
-#our_mission_content{
+#our_mission{
     display: flex;
     align-items: center;
     justify-content: end;
-    overflow: hidden;
-    border-radius: 30px;
-    background-color: rgb(64, 64, 64);
 }
 #our_mission_picture{
     aspect-ratio: 1/1;
-    width: 45%;
+    width: 500px;
+    min-width: 500px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    margin-right: 50px;
 }
 #our_mission_picture img{
     width: 700px;
@@ -85,9 +85,11 @@
     position: relative;
 }
 #our_mission_text{
-    color: white;
-    width: 55%;
+    color: black;
+    height: 100%;
     padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #our_mission_text p{
     font-size: 30px;
@@ -211,8 +213,8 @@
     align-items: center;
 }
 .comment_header img{
-    height: 85px;
-    width: 85px;
+    height: 100px;
+    width: 100px;
     aspect-ratio: 1/1;
     margin-right: 10px;
     background-color: black;
@@ -274,24 +276,25 @@
 /*--- staff - end ---*/
 
 /*--- contact - start ---*/
-#contact_content{
-    background-color: rgb(64, 64, 64);
+#contact{
     border-radius: 30px;
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 #contact_picture{
     overflow: hidden;
-    width: 45%;
+    width: 500px;
+    min-width: 500px;
+    border-radius: 30px;
+    margin-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     aspect-ratio: 1/1;
 }
 #contact_picture img{
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     transform: scale(125%);
     position: relative;
 }
@@ -300,7 +303,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    background-color: white;
+    border-radius: 30px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 #contacts_holder{
     display: flex;
@@ -316,17 +323,17 @@
     width: 400px;
     border: 0;
     padding: 5px;
-    min-height: 25px;
+    min-height: 20px;
     margin: 0 0 5px;
     border-radius: 5px;
     font-size: 17.5px;
+    background-color: rgb(225, 225, 225);
 }
 #contacts_holder form button{
     width: 100%;
     font-size: 25px;
     border: 0;
-    padding: 5px;
-    margin-top: 10px;
+    padding: 5px 0;
     border-radius: 5px;
     background-color: black;
     color: white;
@@ -338,11 +345,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #contacts_holder hr{
-    height: 420px;
+    height: 400px;
     margin: 0 15px;
     width: 3px;
     border: 0;
-    background-color: white;
+    background-color: black;
     border-radius: 1000px;
 }
 #socials{
@@ -380,15 +387,19 @@
     /*--- banner - end ---*/
 
     /*--- our mission - start ---*/
-    #our_mission_picture{
-        aspect-ratio: 2/3;
-        width: 50%;
+    #our_mission{
+        flex-direction: column;
     }
-    #our_mission_picture img{
-        transform: scale(200%);
+    #our_mission_picture{
+        aspect-ratio: 3/2;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        min-width: auto;
     }
     #our_mission_text{
-        width: 50%;
+        width: auto;
+        padding: 50px;
     }
     /*--- our mission - end ---*/
 
@@ -399,6 +410,9 @@
     /*--- services - end ---*/
 
     /*--- flexing - start ---*/
+    #brands{
+        grid-template-columns: repeat(2, 1fr);
+    }
     #brands img{
         transform: scale(85%);
     }
@@ -420,39 +434,49 @@
     /*--- staff - end ---*/
 
     /*--- contact - start ---*/
-    #contact_content{
-        background-color: rgb(64, 64, 64);
-        border-radius: 30px;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
+    #contact{
+        flex-direction: column;
     }
     #contact_picture{
-        width: 50%;
-        aspect-ratio: 2/3;
+        width: 100%;
+        aspect-ratio: 3/2;
+        margin-right: 0;
+        margin-bottom: 50px;
+        border-radius: 30px;
+        min-width: auto;
+    }
+    #contact_text{
+        width: 90%;
+        height: auto;
     }
     #contact_picture img{
         width: 700px;
         height: 700px;
-        transform: scale(175%);
-    }
-    #contact_text{
-        width: 50%;
+        transform: scale(150%);
     }
     #contacts_holder{
+        width: 500px;
         flex-direction: column;
     }
     #contacts_holder hr{
         width: 100%;
         height: 3px;
-        margin: 15px 0;
+        margin: 20px 0;
+    }
+    #contacts_holder form{
+        width: 100%;
+    }
+    #contacts_holder form input, #contacts_holder form textarea{
+        width: 100%;
+    }
+    #contacts_holder form button{
+        width: 100%;
     }
     #socials{
-        display: flex;
         flex-direction: row;
     }
     #socials a{
-        margin: 0 7.5px;
+        margin: 0 10px;
     }
     /*--- contact - end ---*/
 }
@@ -486,21 +510,6 @@
         text-align: center;
     }
     /*--- who are we - end ---*/
-
-    /*--- our mission - start ---*/
-    #our_mission_content{
-        flex-direction: column;
-    }
-    #our_mission_picture{
-        aspect-ratio: 3/2;
-        width: 100%;
-    }
-    #our_mission_text{
-        color: white;
-        width: auto;
-        padding: 50px;
-    }
-    /*--- our mission - end ---*/
 
     /*--- services - start ---*/
     #services_holder{
@@ -542,29 +551,9 @@
     /*--- staff - end ---*/
 
     /*--- contact - start ---*/
-    #contact_content{
-        flex-direction: column;
-        width: 100%;
-    }
-    #contact_picture{
-        width: 100%;
-        aspect-ratio: 3/2;
-    }
-    #contact_picture img{
-        width: 700px;
-        height: 700px;
-    }
-    #contacts_holder{
-        width: 500px;
-    }
-    #contacts_holder form{
-        width: 100%;
-    }
-    #contacts_holder form input, #contacts_holder form textarea{
-        width: 100%;
-    }
-    #contacts_holder form button{
-        width: 100%;
+    #contact_text{
+        width: 85%;
+        height: auto;
     }
     /*--- contact - end ---*/
 }
@@ -595,17 +584,9 @@
     /*--- who are we - end ---*/
 
     /*--- our mission - start ---*/
-    #our_mission_content{
-        flex-direction: column;
-    }
     #our_mission_picture{
-        aspect-ratio: 1/1;
-    }
-    #our_mission_picture img{
-        transform: scale(125%);
-    }
-    #our_mission_text{
-        padding: 25px;
+        aspect-ratio: 5/6;
+        margin-bottom: 25px;
     }
     /*--- our mission - end ---*/
 
@@ -657,16 +638,20 @@
     /*--- staff - end ---*/
 
     /*--- contact - start ---*/
-    #contact_content{
-        flex-direction: column;
-        width: 100%;
-    }
     #contact_picture{
-        width: 100%;
-        aspect-ratio: 4/5;
+        aspect-ratio: 5/6;
+        margin-bottom: 25px;
+    }
+    #contact_picture img{
+        transform: scale(200%);
+    }
+    #contact_text{
+        width: 90%;
+        padding: 50px 25px;
     }
     #contacts_holder{
-        width: 300px;
+        width: 100%;
+        flex-direction: column;
     }
     /*--- contact - end ---*/
 }

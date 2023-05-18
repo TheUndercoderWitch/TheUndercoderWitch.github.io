@@ -5,19 +5,17 @@ h2{
 /*--- banner - start ---*/
 #banner{
     padding: 0vh 5vw 5vh;
-}
-#banner_content{
     display: flex;
     align-items: center;
-    background-color: rgb(64, 64, 64);
-    border-radius: 30px;
-    overflow: hidden;
 }
 #banner_picture{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 500px;
+    min-width: 500px;
+    border-radius: 30px;
+    margin-right: 50px;
     aspect-ratio: 1/1;
     overflow: hidden;
 }
@@ -29,12 +27,19 @@ h2{
 }
 #banner_text{
     padding: 50px;
-    width: 55%;
-    color: white;
+    min-height: 400px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #banner_text p{
     font-size: 30px;
     text-align: justify;
+    margin: 0;
 }
 /*--- banner - end ---*/
 
@@ -157,17 +162,13 @@ h2{
 /*--- contact - end ---*/
 
 /*big tablet styling*/
-@media(max-width:1079px){    
-    /*--- banner - start ---*/
+@media(max-width:1079px){ /*--- banner - start ---*/
     #banner_picture{
-        aspect-ratio: 2/3;
-        width: 50%;
-    }
-    #banner_picture img{
-        transform: scale(150%);
+        width: 450px;
+        min-width: 450px;
     }
     #banner_text{
-        width: 50%;
+        min-height: 350px;
     }
     /*--- banner - end ---*/
 
@@ -187,20 +188,15 @@ h2{
 /*regular tablet styling*/
 @media(max-width:850px){
     /*--- banner - start ---*/
-    #banner_content{
+    #banner{
         flex-direction: column;
     }
     #banner_picture{
         width: 100%;
+        min-width: auto;
+        margin-right: 0px;
+        margin-bottom: 50px;
         aspect-ratio: 3/2;
-    }
-    #banner_picture img{
-        width: 700px;
-        height: 700px;
-        transform: scale(150%);
-    }
-    #banner_text{
-        width: auto;
     }
     #banner_text h1{
         text-align: center;
@@ -225,15 +221,8 @@ h2{
 @media(max-width:450px){
     /*--- banner - start ---*/
     #banner_picture{
-        aspect-ratio: 1/1;
-    }
-    #banner_picture img{
-        width: 500px;
-        height: 500px;
-        transform: scale(125%);
-    }
-    #banner_text{
-        padding: 25px;
+        margin-bottom: 30px;
+        aspect-ratio: 5/6;
     }
     /*--- banner - end ---*/
 
