@@ -79,15 +79,6 @@ h2{
 /*--- justification - end ---*/
 
 /*--- portfolio - start ---*/
-#portfolio_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;
-    padding: 50px;
-    background-color: rgb(64, 64, 64);
-    color: white;
-}
 #projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -102,6 +93,10 @@ h2{
     text-decoration: none;
     overflow: hidden;
     border-radius: 15px;
+    transition: 0.25s;
+}
+.project:hover{
+    transform: scale(102.5%);
 }
 .project_background{
     width: 100%;
