@@ -159,14 +159,32 @@ h2{
 /*big tablet styling*/
 @media(max-width:1079px){
     /*--- banner - start ---*/
+    #banner{
+        flex-direction: column;
+    }
     #banner_picture{
-        width: 450px;
-        min-width: 450px;
+        width: 100%;
+        min-width: auto;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        aspect-ratio: 3/2;
+    }
+    #banner_picture img{
+        transform: scale(180%);
     }
     #banner_text{
-        min-height: 350px;
+        min-height: 300px;
+    }
+    #banner_text h1{
+        text-align: center;
     }
     /*--- banner - end ---*/
+    
+    /*--- justification - start ---*/
+    #justification_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*--- justification - end ---*/
 
     /*--- portfolio - start ---*/
     #projects{
@@ -183,25 +201,8 @@ h2{
 
 /*regular tablet styling*/
 @media(max-width:850px){
-    /*--- banner - start ---*/
-    #banner{
-        flex-direction: column;
-    }
-    #banner_picture{
-        width: 100%;
-        min-width: auto;
-        margin-right: 0px;
-        margin-bottom: 50px;
-        aspect-ratio: 3/2;
-    }
-    #banner_text h1{
-        text-align: center;
-    }
-    /*--- banner - end ---*/
-
     /*--- justification - start ---*/
     #justification_cards{
-        grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
     /*--- justification - end ---*/

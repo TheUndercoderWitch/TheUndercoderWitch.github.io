@@ -18,12 +18,12 @@ window.addEventListener("scroll",()=>{
 
 /*--- mission code - start */
 window.addEventListener("scroll",()=>{
-    missionPicture.style.top = window.scrollY/5 - 300 + "px";
+    missionPicture.style.top = window.scrollY/4 + "px";
 })
 /*--- mission code - end */
 
 /*--- contact code - start ---*/
 window.addEventListener("scroll",()=>{
-    contactPicture.style.top = window.scrollY/10 - 550 + "px";
+    contactPicture.style.top = window.scrollY/4 + "px";
 })
 /*--- contact code - end ---*/
