@@ -118,7 +118,7 @@ h2{
 }
 .project_text:hover{
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 .project_text img{
     width: 65%;

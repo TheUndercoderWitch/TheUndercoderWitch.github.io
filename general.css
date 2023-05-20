@@ -181,7 +181,11 @@ footer{
         padding: 10vw;
     }
     #footer_links{
-        font-size: 26px;        
+        font-size: 25px;        
+    }
+
+    .footer_social p{
+        font-size: 25px;
     }
     /*--- footer - end ---*/  
 }

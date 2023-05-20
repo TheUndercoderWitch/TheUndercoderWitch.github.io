@@ -1,5 +1,5 @@
 .fade_in{
-    transition: 0.5s;
+    transition: 0.75s;
     opacity: 0;
 }
 .fade_in.show{
@@ -7,7 +7,7 @@
 }
 
 .slide_up{
-    transition: 0.5s;
+    transition: 0.75s;
     opacity: 0;
     transform: translateY(50px);
 }
@@ -17,7 +17,7 @@
 }
 
 .slide_right{
-    transition: 0.5s;
+    transition: 0.75s;
     opacity: 0;
     transform: translateX(-50px);
 }
