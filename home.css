@@ -92,7 +92,7 @@
     width: 700px;
     height: 700px;
     transform: scale(125%);
-    transform: translateY(-400px);
+    transform: translateY(-350px);
     aspect-ratio: 1/1;
     position: relative;
 }
@@ -340,7 +340,7 @@
 #contact_picture img{
     width: 600px;
     height: 600px;
-    transform: scale(110%) translateY(-1150px);
+    transform: scale(110%) translateY(-900px);
     position: relative;
 }
 #contact_text{
@@ -485,7 +485,7 @@
         min-width: auto;
     }
     #our_mission_picture img{
-        transform: scale(150%) translateY(-450px);
+        transform: scale(150%) translateY(-400px);
     }
     #our_mission_text{
         width: auto;
@@ -561,7 +561,7 @@
     #contact_picture img{
         width: 700px;
         height: 700px;
-        transform: scale(150%) translateY(-1400px);
+        transform: scale(150%) translateY(-1200px);
     }
     #contacts_holder{
         width: 75%;
@@ -674,7 +674,7 @@
         height: auto;
     }
     #contact_picture img{
-        transform: scale(125%) translateY(-1500px);
+        transform: scale(125%) translateY(-1200px);
     }
     #contacts_holder{
         width: 95%;
@@ -724,7 +724,7 @@
     #our_mission_picture img{
         width: 575px;
         height: 575px;
-        transform: scale(100%) translateY(-500px);
+        transform: scale(100%) translateY(-400px);
     }
     #our_mission_text{
         padding: 25px;
@@ -796,7 +796,7 @@
     #contact_picture img{
         width: 500px;
         height: 500px;
-        transform: scale(115%) translateY(-1800px);
+        transform: scale(120%) translateY(-1500px);
     }
     #contact_text{
         width: 85%;

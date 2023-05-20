@@ -122,6 +122,7 @@ h2{
 }
 .project_text img{
     width: 65%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 .project_text p{
     color: white;
@@ -129,6 +130,7 @@ h2{
     width: 80%;
     text-align: center;
     margin: 10px 0 0;
+    text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
 /*--- portfolio - end ---*/
 
@@ -189,6 +191,9 @@ h2{
     /*--- portfolio - start ---*/
     #projects{
         grid-template-columns: repeat(2, 1fr);;
+    }
+    .project_text{
+        opacity: 1;
     }
     /*--- portfolio - end ---*/
 
