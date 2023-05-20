@@ -167,7 +167,7 @@ h2{
         min-width: auto;
         margin-right: 0px;
         margin-bottom: 50px;
-        aspect-ratio: 3/2;
+        aspect-ratio: 1/1;
     }
     #banner_picture img{
         transform: scale(180%);
