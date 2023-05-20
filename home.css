@@ -59,11 +59,15 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 50px;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #who_are_we_text p{
     font-size: 30px;
     text-align: justify;
     width: fit-content;
+    margin: 0;
 }
 /*--- who are we - end ---*/
 
@@ -100,12 +104,44 @@
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #our_mission_text p{
     font-size: 30px;
     text-align: justify;
+    margin: 0;
 }
 /*--- our mission - end ---*/
+
+/*--- numbers - start ---*/
+#numbers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 0 5vw 10vh;
+}
+.number{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    aspect-ratio: 1/1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.number_top{
+    display: flex;
+}
+.number p{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+/*--- numbers - end ---*/
 
 /*--- services - start ---*/
 #services{
@@ -256,7 +292,7 @@
 .staff_member{
     aspect-ratio: 21/30;
     padding: 25px;
-    background-color: rgb(32, 32, 32);
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -304,7 +340,7 @@
 #contact_picture img{
     width: 600px;
     height: 600px;
-    transform: scale(110%) translateY(-1075px);
+    transform: scale(110%) translateY(-1150px);
     position: relative;
 }
 #contact_text{
@@ -467,6 +503,12 @@
     }
     /*--- our mission - end ---*/
 
+    /*--- numbers - start ---*/
+    #numbers{
+        grid-gap: 30px;
+    }
+    /*--- numbers - end ---*/
+
     /*--- services - start ---*/
     #services_holder{
         width: 100%;
@@ -580,6 +622,17 @@
     }
     /*--- our mission - end ---*/
 
+    /*--- numbers - start ---*/
+    #numbers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .number{
+        aspect-ratio: 2/1;
+        padding: 25px;
+    }
+    /*--- numbers - end ---*/
+
     /*--- services - start ---*/
     #services_holder{
         width: 75%;
@@ -681,6 +734,16 @@
         padding: 25px;
     }
     /*--- our mission - end ---*/
+
+    /*--- numbers - start ---*/
+    #numbers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .number{
+        padding: 20px;
+        aspect-ratio: auto;
+    }
+    /*--- numbers - end ---*/
 
     /*--- services - start ---*/
     #services_holder{
