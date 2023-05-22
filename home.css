@@ -166,6 +166,7 @@
     text-decoration: none;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .service img{
     width: inherit;
@@ -248,9 +249,10 @@
     grid-gap: 50px;
 }
 .comment{
-    background-color: rgb(220, 220, 220);
+    background-color: white;
     padding: 25px;
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .comment_header{
     display: flex;
@@ -278,7 +280,7 @@
 
 /*--- staff - start ---*/
 #staff{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -340,7 +342,7 @@
 #contact_picture img{
     width: 600px;
     height: 600px;
-    transform: scale(110%) translateY(-900px);
+    transform: scale(110%) translateY(-750px);
     position: relative;
 }
 #contact_text{
@@ -366,7 +368,7 @@
     align-items: center;
 }
 #contacts_holder form input, #contacts_holder form textarea{
-    width: 475px;
+    width: 400px;
     border: 0;
     padding: 5px;
     margin: 0 0 5px;
@@ -561,7 +563,7 @@
     #contact_picture img{
         width: 700px;
         height: 700px;
-        transform: scale(150%) translateY(-1200px);
+        transform: scale(150%) translateY(-950px);
     }
     #contacts_holder{
         width: 75%;
@@ -618,7 +620,7 @@
 
     /*--- our mission - start ---*/
     #our_mission_picture img{
-        transform: translateY(-450px);
+        transform: scale(125%) translateY(-450px);
     }
     /*--- our mission - end ---*/
 
@@ -674,7 +676,7 @@
         height: auto;
     }
     #contact_picture img{
-        transform: scale(125%) translateY(-1200px);
+        transform: scale(125%) translateY(-1125px);
     }
     #contacts_holder{
         width: 95%;
@@ -796,7 +798,7 @@
     #contact_picture img{
         width: 500px;
         height: 500px;
-        transform: scale(120%) translateY(-1500px);
+        transform: scale(120%) translateY(-1250px);
     }
     #contact_text{
         width: 85%;
