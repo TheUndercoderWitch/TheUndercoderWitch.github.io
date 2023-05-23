@@ -1,191 +1,232 @@
-/*--- general - start ---*/
+/*--- settings - start ---*/
 @font-face {
-    font-family: "Source sans pro";
-    src: url(fonts/SourceSansPro-Regular.ttf);
+    font-family: "Poppins";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins bold";
+    src: url(fonts/Poppins-Bold.ttf);
 }
 *{
-    font-family: "Source sans pro";
-}
-body{
-    margin: 0;
-    background-color: rgb(250, 250, 255);
+    font-family: "Poppins";
 }
 
+h1, h2, h3, h4{
+    font-family: "Poppins bold";
+}
 h1{
-    font-size: 55px;
-    margin: 0 0 15px;
+    font-size: 40px;
+    color: #ae8625;
+    margin-bottom: 25px;
 }
 h2{
-    font-size: 45px;
-    margin: 0 0 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 h3{
-    font-size: 35px;
-    margin: 0 0 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 h4{
-    font-size: 30px;
-    margin: 0 0 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
-h5{
-    font-size: 25px;
-    margin: 0 0 5px;
+p{
+    font-size: 20px;
 }
+/*--- settings - end ---*/
 
+/*--- general - start ---*/
+body{
+    margin: 0;
+}
 .top_section{
-    padding: 20vh 5vw 10vh;
+    padding: 10vw 5vw 5vw;
 }
 .middle_section{
-    padding: 10vh 5vw;
+    padding: 5vw;
 }
 .bottom_section{
-    padding: 10vh 5vw 20vh;
+    padding: 5vw 5vw 10vw;
+}
+main{
+    min-height: 100vh;
 }
 /*--- general - end ---*/
 
-/*--- header - start ---*/
-header{
+/*--- nav - start ---*/
+nav{
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: end;
-    padding: 0px 5vw;
-    height: 10vh;
+    justify-content: space-between;
+    padding: 10px 5%;
+    width: 90%;
+    transition: 0.5s;
+    z-index: 100;
 }
-header a, header p{
-    color: black;
-    font-size: 25px;
+.scrolled_nav{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+nav img{
+    height: 40px;
+}
+#nav_links a{
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    font-size: 22.5px;
     margin-left: 15px;
 }
-header i{
-    font-size: 30px;
-    margin-left: 25px;
+.current_nav_link{
+    font-weight: bold;
 }
-#header_icon{
-    font-size: 30px;
+#nav_btn{
+    display: none;
 }
-/*--- header - end ---*/
+#nav_menu{
+    display: none;
+}
+/*--- nav - end ---*/
 
 /*--- footer - start ---*/
 footer{
-    padding: 5vh 5vw 5vw;
-}
-#footer_content{
-    background-color: black;
+    background: linear-gradient(to top right, rgb(250, 250, 250), rgb(215, 215, 215));
     padding: 5vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    border-radius: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+}
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #footer_logo img{
     width: 100%;
 }
-#footer_logo h3{
-    color: white;
+
+#footer_sitemap a{
+    font-size: 20px;
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.current_footer_link{
+    font-weight: bold;
 }
 
-#footer_socials{
-    display: flex;
-    flex-direction: column;
-}
 .footer_social{
-    width: 95%;
-    padding: 5px;
-    background-color: white;
-    border-radius: 1000px;
-    min-height: 50px;
-    margin: 5px;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-decoration: none;
     color: black;
-    transition: 0.25s;
-}
-.footer_social:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
 }
 .footer_social i{
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 15px;
 }
 .footer_social p{
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
 }
 
-#footer_links{
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-#footer_links a{
-    color: white;
+#footer_links a, #footer_links p{
+    font-size: 20px;
+    margin: 0 0 20px;
+    color: black;
 }
 /*--- footer - end ---*/
 
-/*big tablet styling*/
-@media(max-width:1079px){   
-    /*--- general - start ---*/
-    .top_section{
-        padding: 15vh 5vw 7.5vh;
+/*tablet styling*/
+@media(max-width:1075px){
+    /*--- nav - start ---*/
+    nav{
+        padding: 15px 5%;
     }
-    .middle_section{
-        padding: 7.5vh 5vw;
+    nav img{
+        height: 50px;
     }
-    .bottom_section{
-        padding: 7.5vh 5vw 15vh;
-    }
-    /*--- general - end ---*/ 
+    /*--- nav - end ---*/
 }
 
-/*regular tablet styling*/
+/*normal tablet styling*/
 @media(max-width:850px){
-
-    /*--- footer - start ---*/
-    #footer_content{
-        grid-template-columns: repeat(2, 1fr);
+    /*--- general - start ---*/
+    .top_section{
+        padding: 16vw 5vw 8vw;
     }
-    /*--- footer - end ---*/   
+    .middle_section{
+        padding: 8vw;
+    }
+    .bottom_section{
+        padding: 8vw 5vw 16vw;
+    }
+    main{
+        min-height: 100vh;
+    }
+    /*--- general - end ---*/
+
+    /*--- nav - start ---*/
+    #nav_btn{
+        display: block;
+        margin: 0;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    #nav_links{
+        display: none;
+    }
+    #nav_menu{
+        position: fixed;
+        z-index: 99;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    /*--- nav - end ---*/
+    
+    /*--- footer - start ---*/
+    footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    /*--- footer - end ---*/
 }
 
 /*phone styling*/
 @media(max-width:450px){
     /*--- general - start ---*/
-    h1{
-        font-size: 47.5px;
+    .top_section{
+        padding: 15vh 5vw 7.5vw;
     }
-    h2{
-        font-size: 39px;
+    .middle_section{
+        padding: 7.5vw;
+    }
+    .bottom_section{
+        padding: 7.5vw 5vw 15vw;
+    }
+    main{
+        min-height: 100vh;
     }
     /*--- general - end ---*/
 
-    /*--- header - start ---*/
-    header a, header p, header i{
-        font-size: 18px;
-        margin-left: 10px;
+    /*--- nav - start ---*/
+    nav img{
+        height: 40px;
     }
-    #header_icon{
-        margin-left: 15px;
-    }
-    /*--- header - end ---*/
+    /*--- nav - end ---*/
 
     /*--- footer - start ---*/
-    #footer_content{
+    footer{
         grid-template-columns: repeat(1, 1fr);
-        padding: 10vw;
+        grid-gap: 50px;
     }
-    #footer_links{
-        font-size: 25px;        
-    }
-
-    .footer_social p{
-        font-size: 25px;
-    }
-    /*--- footer - end ---*/  
+    /*--- footer - end ---*/
 }

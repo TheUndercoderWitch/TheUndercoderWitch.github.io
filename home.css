@@ -1,243 +1,95 @@
-/*--- banner - start ---*/
-#banner{
-    padding: 0vh 5vw 5vh;
-}
-#banner_content{
-    aspect-ratio: 19/9;
-    width: 100%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-#banner_picture{
-    position: relative;
-    width: 100vw;
-    filter: grayscale(40%);
-}
-#banner_text{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 750px;
-}
-#banner_text img{
-    width: 100%;
-    filter: drop-shadow(0 0 10px black);
-}
-#banner_text h1{
-    color: white;
-    text-shadow: 0 0 10px black;
-}
-/*--- banner - end ---*/
-
-/*--- who are we - start ---*/
-#who_are_we{
+/*--- presentation - start ---*/
+#presentation{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-#who_are_we_picture{
-    height: 500px;
-    width: 500px;
-    border-radius: 30px;
-    aspect-ratio: 1/1;
-    margin-right: 50px;
-    background-color: rgb(64, 64, 64);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#who_are_we_picture img{
-    width: 80%;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-}
-#who_are_we_text{
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 50px;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#who_are_we_text p{
-    font-size: 30px;
-    text-align: justify;
-    width: fit-content;
-    margin: 0;
-}
-/*--- who are we - end ---*/
-
-/*--- our mission - start ---*/
-#our_mission{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-#our_mission_picture{
-    aspect-ratio: 1/1;
-    width: 500px;
-    min-width: 500px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
+#presentation img{
+    width: 450px;
     margin-right: 50px;
 }
-#our_mission_picture img{
-    width: 700px;
-    height: 700px;
-    transform: scale(125%);
-    transform: translateY(-350px);
-    aspect-ratio: 1/1;
-    position: relative;
-}
-#our_mission_text{
-    color: black;
-    background-color: white;
-    height: 100%;
-    padding: 50px;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#our_mission_text p{
-    font-size: 30px;
+#presentation p{
+    margin: 0;
     text-align: justify;
-    margin: 0;
 }
-/*--- our mission - end ---*/
-
-/*--- numbers - start ---*/
-#numbers{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 0 5vw 10vh;
-}
-.number{
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    aspect-ratio: 2/1;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.number_top{
-    display: flex;
-}
-.number p{
-    font-size: 30px;
-    text-align: center;
-    margin: 0;
-}
-/*--- numbers - end ---*/
+/*--- presentation - end ---*/
 
 /*--- services - start ---*/
 #services{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+#services h1{
+    text-align: center;
 }
 #services_holder{
     display: grid;
-    width: 80%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 400px);
     grid-gap: 50px;
-    justify-content: center;
 }
 .service{
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-direction: column;
     text-decoration: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.service img{
-    width: inherit;
-    height: inherit;
-}
-.service_text_holder{
-    width: inherit;
-    aspect-ratio: inherit;
-    margin-top: -100%;
-    padding-top: 80%;
-    opacity: 0.5;
-    transition: 0.5s;
-}
-.service_text_holder:hover{
-    padding-top: 0px;
-    opacity: 1;
-}
-.service_text{
-    width: inherit;
-    height: inherit;
-    background-color: rgb(64, 64, 64);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: url(pictures/random/1_stripe_background.png);
+    background-size: 500px;
+    background-color: rgb(32, 32, 32);
+    aspect-ratio: 1/1;
+    width: 350px;
+    padding: 25px;
     color: white;
-    aspect-ratio: inherit;
-}
-.service_text h3{
-    margin-top: 30px;
-}
-.service_text p{
-    font-size: 30px;
-    margin: 0;
     text-align: justify;
-    width: 80%;
+    transition: 0.3s;
+}
+.service h3{
+    margin-top: 75px;
+}
+.service:hover{
+    transform: scale(102.5%);
+}
+.service hr{
+    border: 0;
+    margin: 10px 0;
+    height: 5px;
+    background: linear-gradient(to right, #ae8625, #f7ef8a);
 }
 /*--- services - end ---*/
 
 /*--- flexing - start ---*/
-#flexing_content{
-    min-height: 20vh;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#flexing_content h2{
+#flexing h2{
     text-align: center;
 }
-#brands{
-    margin-top: 35px;
+#numbers, #brands{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
-    row-gap: 75px;
-    width: 100%;
+    grid-gap: 100px;
 }
+
+#numbers{
+    margin-bottom: 100px;
+}
+.number{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    aspect-ratio: 2/1;
+}
+.number h3{
+    margin-top: 0;
+}
+.number p{
+    margin: 0;
+}
+
 #brands img{
     width: 100%;
-    transform: scale(75%);
-    transition: 0.25s;
-}
-#brands img:hover{
-    transform: scale(80%);
 }
 /*--- flexing - end ---*/
 
-/*--- customer comments - start ---*/
+/*--- comments - start ---*/
 #customer_comments{
     display: flex;
     flex-direction: column;
@@ -249,564 +101,177 @@
     grid-gap: 50px;
 }
 .comment{
-    background-color: white;
+    background: url(pictures/random/1_stripe_background.png);
+    background-size: 500px;
+    background-color: rgb(32, 32, 32);
     padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
 }
 .comment_header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .comment_header img{
-    height: 100px;
-    width: 100px;
-    aspect-ratio: 1/1;
-    margin-right: 10px;
-    background-color: black;
+    height: 110px;
+    width: 110px;
     border-radius: 1000px;
+}
+.comment_header h3, .comment_header p{
+    text-align: center;
+}
+.comment_header h3{
+    margin-top: 15px;
 }
 .comment_header p{
-    font-size: 25px;
     margin: 0;
 }
-.comment_content{
-    font-size: 25px;
+.comment hr{
+    margin: 10px 0;
+    border: 0;
+    height: 5px;
+    background: linear-gradient(to right, #ae8625, #f7ef8a);
+}
+.comment_content h4, .comment_content p{
+    margin-top: 0;
     text-align: justify;
-    margin: 15px 0 0;
 }
-/*--- customer comments - end ---*/
-
-/*--- staff - start ---*/
-#staff{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#staff_members{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    width: 100%;
-}
-.staff_member{
-    aspect-ratio: 21/30;
-    padding: 25px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    transition: 0.25s;
-}
-.staff_member:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.staff_member img{
-    width: 200px;
-    height: 200px;
-    border-radius: 1000px;
-    margin-bottom: 25px;
-}
-.staff_member p{
-    font-size: 30px;
+.comment_content p{
     margin: 0;
 }
-/*--- staff - end ---*/
+/*--- comments - end ---*/
 
 /*--- contact - start ---*/
 #contact{
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-}
-#contact_picture{
-    width: 500px;
-    min-width: 500px;
-    border-radius: 30px;
-    margin-right: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-}
-#contact_picture img{
-    width: 600px;
-    height: 600px;
-    transform: scale(110%) translateY(-750px);
-    position: relative;
-}
-#contact_text{
-    padding: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border-radius: 30px;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    min-height: 400px;
-}
-#contacts_holder{
-    display: flex;
     justify-content: center;
     align-items: center;
 }
-#contacts_holder form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#contacts_holder form input, #contacts_holder form textarea{
-    width: 400px;
-    border: 0;
-    padding: 5px;
-    margin: 0 0 5px;
-    border-radius: 5px;
-    font-size: 17.5px;
-    background-color: rgb(225, 225, 225);
-}
-#contacts_holder form input{
-    min-height: 20px;
-}
-#contacts_holder form textarea{
-    height: 180px;
-}
-#contacts_holder form button{
-    width: 100%;
-    font-size: 25px;
-    border: 0;
-    padding: 5px 0;
-    border-radius: 5px;
-    background-color: black;
+#contact a{
     color: white;
-    transition: 0.25s;
-}
-#contacts_holder form button:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#contacts_holder hr{
-    height: 400px;
-    margin: 0 15px;
-    width: 3px;
-    border: 0;
-    background-color: black;
-    border-radius: 1000px;
-}
-#socials{
-    display: flex;
-    flex-direction: column;
-}
-#socials a{
-    aspect-ratio: 1/1;
-    background-color: black;
-    width: 60px;
-    height: 60px;
-    margin: 7.5px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1000px;
+    background-color: #ae8625;
+    font-size: 20px;
+    padding: 10px 25px;
     text-decoration: none;
-    color: white;
     transition: 0.25s;
 }
-#socials a:hover{
-    background-color: white;
+#contact a:hover{
     color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#socials i{
-    font-size: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 /*--- contact - end ---*/
 
-/*big tablet styling*/
-@media(max-width:1079px){
-    /*--- banner - start ---*/
-    #banner_content{
-        aspect-ratio: 1/1;
-    }
-    #banner_picture{
-        width: 100vw;
-        transform: scale(160%);
-    }
-    /*--- banner - end ---*/
-
-    /*--- who are we - start ---*/
-    #who_are_we{
-        flex-direction: column;
-    }
-    #who_are_we_picture{
-        aspect-ratio: 3/2;
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin-bottom: 50px;
-    }
-    #who_are_we_picture img{
-        width: auto;
-        height: 50%;
-    }
-    #who_are_we_text{
-        min-height: auto;
-        min-height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #who_are_we_text h2{
-        text-align: center;
-    }
-    #who_are_we_text p{
-        margin: 0;
-    }
-    /*--- who are we - end ---*/
-
-    /*--- our mission - start ---*/
-    #our_mission{
-        flex-direction: column;
-    }
-    #our_mission_picture{
-        aspect-ratio: 3/2;
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 50px;
-        min-width: auto;
-    }
-    #our_mission_picture img{
-        transform: scale(150%) translateY(-400px);
-    }
-    #our_mission_text{
-        width: auto;
-        padding: 50px;
-        min-height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #our_mission_text h2{
-        text-align: center;
-    }
-    #our_mission_text p{
-        margin: 0;
-    }
-    /*--- our mission - end ---*/
-
-    /*--- numbers - start ---*/
-    #numbers{
-        grid-gap: 30px;
-    }
-    .number{
-        aspect-ratio: 6/5;
-    }
-    /*--- numbers - end ---*/
-
-    /*--- services - start ---*/
-    #services_holder{
-        width: 100%;
-    }
-    /*--- services - end ---*/
-
+/*tablet styling*/
+@media(max-width:1075px){
     /*--- flexing - start ---*/
-    #brands{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #brands img{
-        transform: scale(85%);
-    }
-    #brands img:hover{
-        transform: scale(95%);
+    #numbers, #brands{
+        grid-gap: 50px;
     }
     /*--- flexing - end ---*/
 
-    /*--- customer comments - start ---*/
+    /*--- comments - start ---*/
     #comments{
         grid-template-columns: repeat(2, 1fr);
     }
-    /*--- customer comments - end ---*/
-
-    /*--- staff - start ---*/
-    #staff_members{
-        grid-template-columns: repeat(2, 1fr);
+    .comment{
+        padding: 50px;
     }
-    /*--- staff - end ---*/
-
-    /*--- contact - start ---*/
-    #contact{
-        flex-direction: column;
-    }
-    #contact_picture{
-        width: 100%;
-        aspect-ratio: 3/2;
-        margin-right: 0;
-        margin-bottom: 50px;
-        border-radius: 30px;
-        min-width: auto;
-    }
-    #contact_text{
-        width: 90%;
-        height: auto;
-    }
-    #contact_picture img{
-        width: 700px;
-        height: 700px;
-        transform: scale(150%) translateY(-950px);
-    }
-    #contacts_holder{
-        width: 75%;
-        flex-direction: column;
-    }
-    #contacts_holder hr{
-        width: 100%;
-        height: 3px;
-        margin: 20px 0;
-    }
-    #contacts_holder form{
-        width: 100%;
-    }
-    #contacts_holder form input, #contacts_holder form textarea{
-        width: 100%;
-    }
-    #contacts_holder form input{
-        min-height: 30px;
-    }
-    #contacts_holder form textarea{
-        min-height: 400px;
-    }
-    #contacts_holder form button{
-        width: 100%;
-        min-height: 30px;
-    }
-    #socials{
-        flex-direction: row;
-    }
-    #socials a{
-        margin: 0 10px;
-    }
-    /*--- contact - end ---*/
+    /*--- comments - end ---*/
 }
 
-/*regular tablet styling*/
+/*normal tablet styling*/
 @media(max-width:850px){
-    /*--- banner - start ---*/
-    #banner_picture{
-        width: 125vw;
+    /*--- presentation - start ---*/
+    #presentation{
+        flex-direction: column;
     }
-    #banner_text{
-        text-align: center;
-        width: 500px;
+    #presentation img{
+        margin-right: 0;
+        margin-bottom: 50px;
     }
-    /*--- banner - end ---*/
-
-    /*--- who are we - start ---*/
-    #who_are_we_picture img{
-        width: 65%;
-        height: auto;
-    }
-    /*--- who are we - end ---*/
-
-    /*--- our mission - start ---*/
-    #our_mission_picture img{
-        transform: scale(125%) translateY(-450px);
-    }
-    /*--- our mission - end ---*/
-
-    /*--- numbers - start ---*/
-    .number{
-        aspect-ratio: 1/1;
-        padding: 25px;
-    }
-    /*--- numbers - end ---*/
-
+    /*--- presentation - end ---*/
+    
     /*--- services - start ---*/
     #services_holder{
-        width: 75%;
-        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 325px);
+        grid-gap: 30px;
     }
-    .service_text_holder{
-        padding-top: 82.5%;
+    .service{
+        width: 275px;
     }
     /*--- services - end ---*/
-
+    
     /*--- flexing - start ---*/
-    #brands{
-        grid-template-columns: repeat(2, 1fr);
+    #numbers, #brands{
+        grid-gap: 30px;
+    }
+    #numbers{
+        margin-bottom: 50px;
     }
     /*--- flexing - end ---*/
-
-    /*--- customer comments - start ---*/
+    
+    /*--- comments - start ---*/
     #comments{
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
     .comment{
-        padding: 15px;
+        padding: 25px;
     }
-    .comment_header{
-        flex-direction: column;
-        text-align: center;
-    }
-    .comment_header img{
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-    /*--- customer comments - end ---*/
-
-    /*--- staff - start ---*/
-    #staff_members{
-        grid-gap: 30px;
-    }
-    /*--- staff - end ---*/
-
-    /*--- contact - start ---*/
-    #contact_text{
-        width: 85%;
-        height: auto;
-    }
-    #contact_picture img{
-        transform: scale(125%) translateY(-1125px);
-    }
-    #contacts_holder{
-        width: 95%;
-    }
-    /*--- contact - end ---*/
+    /*--- comments - end ---*/
 }
 
 /*phone styling*/
 @media(max-width:450px){
-    h2{
+    /*--- presentation - start ---*/
+    #presentation img{
+        width: 350px;
+    }
+    #presentation_text h1{
         text-align: center;
     }
-
-    /*--- banner - start ---*/
-    #banner_content{
-        aspect-ratio: 105/200;
-    }
-    #banner_picture{
-        width: 300vw;
-    }
-    #banner_text{
-        width: 80%;
-    }
-    /*--- banner - end ---*/
-
-    /*--- who are we - start ---*/
-    #who_are_we_picture{
-        aspect-ratio: 5/6;
-        height: auto;
-        width: 100%;
-        margin-bottom: 25px;
-    }
-    #who_are_we_picture img{
-        width: 75%;
-        height: auto;
-    }
-    #who_are_we_text{
-        padding: 25px;
-    }
-    /*--- who are we - end ---*/
-
-    /*--- our mission - start ---*/
-    #our_mission_picture{
-        aspect-ratio: 5/6;
-        margin-bottom: 25px;
-    }
-    #our_mission_picture img{
-        width: 575px;
-        height: 575px;
-        transform: scale(100%) translateY(-400px);
-    }
-    #our_mission_text{
-        padding: 25px;
-    }
-    /*--- our mission - end ---*/
-
-    /*--- numbers - start ---*/
-    #numbers{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .number{
-        padding: 20px;
-        aspect-ratio: auto;
-    }
-    /*--- numbers - end ---*/
-
+    /*--- presentation - end ---*/
+    
     /*--- services - start ---*/
     #services_holder{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 350px);
+        grid-gap: 30px;
     }
-    .service_text_holder{
-        padding-top: 75%;
-    }
-    .service_text p{
-        font-size: 27.5px;
+    .service{
+        background-size: 400px;
+        width: 300px;
     }
     /*--- services - end ---*/
-
+    
     /*--- flexing - start ---*/
-    #flexing_content{
-        padding: 50px;
-    }
-    #brands{
+    #numbers, #brands{
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        grid-gap: 50px;
+        grid-gap: 30px;
     }
+
     #brands img{
-        transform: scale(100%);
+        width: 100%;
     }
     /*--- flexing - end ---*/
-
-    /*--- customer comments - start ---*/
+    
+    /*--- comments - start ---*/
+    #customer_comments h1{
+        text-align: center;
+    }
     #comments{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
     }
-    /*--- customer comments - end ---*/
-
-    /*--- staff - start ---*/
-    #staff_members{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .staff_member{
-        aspect-ratio: 1/1;
-    }
-    .staff_member img{
-        width: 150px;
-        height: 150px;
-    }
-    /*--- staff - end ---*/
-
+    /*--- comments - end ---*/
+    
     /*--- contact - start ---*/
-    #contact_picture{
-        aspect-ratio: 5/6;
-        margin-bottom: 25px;
-    }
-    #contact_picture img{
-        width: 500px;
-        height: 500px;
-        transform: scale(120%) translateY(-1250px);
-    }
-    #contact_text{
-        width: 85%;
-        padding: 50px 25px;
-    }
-    #contacts_holder{
-        width: 100%;
-        flex-direction: column;
+    #contact h1{
+        text-align: center;
     }
     /*--- contact - end ---*/
 }
