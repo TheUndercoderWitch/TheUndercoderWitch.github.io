@@ -287,6 +287,12 @@
     }
     /*--- flexing - end ---*/
     
+    /*--- comments - start ---*/
+    .comment{
+        background-size: 500px;
+    }
+    /*--- comments - end ---*/
+    
     /*--- contact - start ---*/
     #contact h1{
         text-align: center;

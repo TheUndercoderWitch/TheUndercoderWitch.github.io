@@ -107,6 +107,9 @@ footer{
 #footer_logo img{
     width: 100%;
 }
+#footer_logo h2{
+    text-align: center;
+}
 
 #footer_sitemap a{
     font-size: 20px;

@@ -88,7 +88,7 @@
 @media(max-width:750px){
     /*--- staff - start ---*/
     #staff_members{
-        grid-template-columns: repeat(1, 0.8fr);
+        grid-template-columns: repeat(1, 0.9fr);
         width: 0.8fr;
         justify-content: center;
     }
