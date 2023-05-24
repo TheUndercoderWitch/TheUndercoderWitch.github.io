@@ -183,12 +183,27 @@ footer{
     #nav_menu{
         position: fixed;
         z-index: 99;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100vw;
         height: 100vh;
+        background-color: rgb(225, 225, 225);
+        transition: 0.25s;
+        pointer-events: none;
+        transform: translateY(50px);
+        opacity: 0;
+        filter: blur(1px);
+    }
+    #nav_menu a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        margin: 5px 0;
+    }
+    .current_nav_menu{
+        font-weight: bold;
     }
     /*--- nav - end ---*/
     

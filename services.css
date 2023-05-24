@@ -44,6 +44,6 @@
 /*phone styling*/
 @media(max-width:450px){
     .service img{
-        width: 325px;
+        width: 90vw;
     }
 }

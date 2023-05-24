@@ -225,39 +225,18 @@
     /*--- comments - end ---*/
 }
 
-/*phone styling*/
-@media(max-width:450px){
-    /*--- presentation - start ---*/
-    #presentation img{
-        width: 325px;
-    }
-    #presentation_text h1{
-        text-align: center;
-    }
-    /*--- presentation - end ---*/
-    
+/*small tablet styling*/
+@media(max-width:750px){
     /*--- services - start ---*/
     #services_holder{
-        grid-template-columns: repeat(1, 325px);
+        grid-template-columns: repeat(1, 400px);
         grid-gap: 30px;
     }
     .service{
         background-size: 400px;
-        width: 275px;
+        width: 350px;
     }
     /*--- services - end ---*/
-    
-    /*--- flexing - start ---*/
-    #numbers, #brands{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-    }
-
-    #brands img{
-        width: 100%;
-    }
-    /*--- flexing - end ---*/
     
     /*--- comments - start ---*/
     #customer_comments h1{
@@ -267,7 +246,46 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
     }
+    .comment{
+        background-size: 90vw;
+    }
     /*--- comments - end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- presentation - start ---*/
+    #presentation img{
+        width: 90vw;
+    }
+    #presentation_text h1{
+        text-align: center;
+    }
+    /*--- presentation - end ---*/
+    
+    /*--- services - start ---*/
+    #services_holder{
+        grid-template-columns: repeat(1, 90vw);
+        grid-gap: 30px;
+    }
+    .service{
+        background-size: 400px;
+        width: 75vw;
+        padding: 7.5vw;
+    }
+    /*--- services - end ---*/
+    
+    /*--- flexing - start ---*/
+    #numbers, #brands{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    #brands img{
+        width: 100%;
+    }
+    /*--- flexing - end ---*/
     
     /*--- contact - start ---*/
     #contact h1{
